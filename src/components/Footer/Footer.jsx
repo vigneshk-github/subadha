@@ -1,10 +1,15 @@
+"use client"
 import Link from "next/link";
 import style from "./style.module.css";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import XIcon from "@mui/icons-material/X";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 export default function Footer() {
   return (
     <div
-      className="relative h-[400px]"
+      className="relative h-[700px]"
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
       <div className="fixed h-[400px] w-full bottom-0 text-black bg-white">
@@ -20,20 +25,29 @@ export default function Footer() {
                 href="https://x.com/Subadhadev?t=f-3E602Dxd7GwA0lIw7GaQ&s=08"
                 target="_blank"
               >
-                X(Twitter)
+                <XIcon>X(Twitter)</XIcon>
               </Link>
             </span>
             <span>
               <Link href="" target="_blank">
-                Instagram
+                <InstagramIcon>Instagram</InstagramIcon>
               </Link>
             </span>
             <span>
               <Link href="https://wa.me/message/5D7P4M6VBMYUM1" target="_blank">
-                Whats Up
+                <WhatsAppIcon>Whats App</WhatsAppIcon>
+              </Link>
+            </span>
+            <span>
+              <Link
+                href="https://www.facebook.com/profile.php?id=61561972772982&mibextid=ZbWKwL"
+                target="_blank"
+              >
+                <FacebookIcon>Facebook</FacebookIcon>
               </Link>
             </span>
           </div>
+          <div className={style.copy}>© 2024 Subadha | All Rights Reserved</div>
         </div>
       </div>
     </div>

@@ -14,9 +14,13 @@
 
 .social{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
 } 
 .social>*{
-    padding-top: 15px;
+    padding-bottom: 105px;
+}
+
+.copy{
+    margin-bottom: 100px;
 }

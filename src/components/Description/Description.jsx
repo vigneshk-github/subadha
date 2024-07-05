@@ -8,11 +8,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Description() {
   const phrases = [
-    "Los Flamencos National Reserve",
-    "is a nature reserve located",
-    "in the commune of San Pedro de Atacama",
-    "The reserve covers a total area",
-    "of 740 square kilometres (290 sq mi)",
+    "Our team crafts beautiful and functional",
+    "websites that not only attract visitors ",
+    "but also convert them into loyal customers.",
+    "Let's take your digital presence to next level."
   ];
 
   return (

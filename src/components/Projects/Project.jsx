@@ -5,7 +5,7 @@ import { useRef } from "react";
 
 const Project = () => {
   return (
-    <div className="bg-neutral">
+    <div >
       <div className="flex h-48 items-center justify-center">
         <span
           data-scroll
@@ -29,7 +29,7 @@ const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-60%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh] bg-neutral">
+    <section ref={targetRef} className="relative h-[300vh]">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-10">
           {cards.map((card) => {
@@ -45,7 +45,7 @@ const Card = ({ card }) => {
   return (
     <div
       key={card.id}
-      className="group relative h-[350px] w-[550px] overflow-hidden bg-neutral-200"
+      className="group relative h-[350px] w-[550px] overflow-hidden"
     >
       <div
         style={{

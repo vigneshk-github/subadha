@@ -14,11 +14,15 @@ const routes = [
     name: "CONTACT US",
     href: "/contact",
   },
+  ,
   {
-    name:"BOOK",
-    href:"/"
-
-  }
+    name: "SERVICES",
+    href: "",
+  },
+  {
+    name: "BOOK",
+    href: "",
+  },
 ];
 
 export default function Navbar() {

@@ -12,7 +12,7 @@
 
 .sliderContainer {
     position: absolute;
-    top: 350px;
+    top: 400px;
 }
 
 .slider {
@@ -34,4 +34,14 @@
     position: absolute;
     left: 100%;
     top: 0;
+}
+
+
+.header{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    font-size: 70px;
+    padding-left: 40px;
+    font-weight: 500;
 }

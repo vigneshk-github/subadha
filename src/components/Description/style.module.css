@@ -5,10 +5,11 @@
     text-transform: uppercase;
     margin-top: 15vw;
     margin-left: 10vw;
-    /* margin-bottom: 1000px; */
+    margin-bottom: 100px;
 }
 
 .description p{
     position: relative;
     margin: 0px;
+    font-weight: 500;
 }

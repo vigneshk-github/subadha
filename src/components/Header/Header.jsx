@@ -41,7 +41,14 @@ export default function Header() {
 
   return (
     <div className={styles.main}>
-      <Image src="/images/kalki.jpg" fill={true} alt="background" />
+      <div data-scroll data-scroll-speed="0.3" className={styles.header}>
+        <h1 className={styles.intro}>We Build Websites For</h1>
+        <h1 className={styles.intro}>E-commerce Brands</h1>
+        <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
+          Book a Call
+        </button>
+      </div>
+
       <div className={styles.sliderContainer}>
         <div ref={slider} className={styles.slider}>
           <p ref={firstText}>Freelance Developer -</p>
