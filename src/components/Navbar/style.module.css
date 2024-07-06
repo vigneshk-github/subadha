@@ -3,7 +3,12 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: white;
+    color: white;
+background-color: rgba(255, 255, 255, 0.2);
+    /* Adjust the opacity (fourth value) as needed */
+    backdrop-filter: blur(10px);
+    /* Adjust the blur radius as needed */
+    opacity: 0.4;
     z-index: 1;
 }
 
@@ -12,10 +17,3 @@
     justify-content: center;
     align-items: center;
 }
-
-    .smoothscroll {
-        color: black;
-            scroll-behavior: smooth;
-            transition: all 0.7s ease-in-out;
-            /* Adjust duration and easing as needed */
-    }
