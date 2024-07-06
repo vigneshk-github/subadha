@@ -9,6 +9,8 @@ export default function Comp() {
   const background = useRef(null);
   const homeHeader = useRef(null);
   const introText = useRef(null);
+  const p1 = useRef(null);
+  const p2 = useRef(null);
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -29,24 +31,40 @@ export default function Comp() {
         { clipPath: `inset(0%)` }
       )
       .to(background.current, { scale: 1 }, 0)
-      .to(introText.current, { y: -200 }, 0); // Animate the text
+      .to(introText.current, { y: -200 }, 0)// Animate the text
+      .to(p1.current,{y:-600},0);
   }, []);
 
   return (
-    <div ref={homeHeader} className={styles.homeHeader}>
-      <div className={styles.backgroundImage} ref={background}>
-        <Image
+    <>
+      <div ref={homeHeader} className={styles.homeHeader}>
+        <div className={styles.backgroundImage} ref={background}>
+          {/* <Image
           src={"/images/kalki.jpg"}
           fill={true}
           alt="background image"
           priority={true}
-        />
+        /> */}
+        </div>
+        <div className={styles.intro}>
+          <h1 ref={introText} data-scroll data-scroll-speed="0.6">
+            ABOUT US
+          </h1>
+          <p data-scroll data-scroll-speed="0.2">
+            Our team crafts beautiful and functional websites that not only
+            attract visitors but also convert them
+            <p>
+              into loyal customers. Let's take your digital presence to the next
+              level.
+            </p>
+          </p>
+        </div>
       </div>
-      <div className={styles.intro}>
+      <div className={styles.team}>
         <h1 ref={introText} data-scroll data-scroll-speed="0.3">
-          ABOUT US
+          Meet Our Dedicated Team of Experts
         </h1>
       </div>
-    </div>
+    </>
   );
 }

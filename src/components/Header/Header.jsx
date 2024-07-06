@@ -40,7 +40,7 @@ export default function Header() {
   };
 
   return (
-    <div className={styles.main}>
+    <div id="home" className={styles.main}>
       <div data-scroll data-scroll-speed="0.3" className={styles.header}>
         <h1 className={styles.intro}>We Build Websites For</h1>
         <h1 className={styles.intro}>E-commerce Brands</h1>

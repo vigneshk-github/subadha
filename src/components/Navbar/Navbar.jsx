@@ -1,44 +1,35 @@
 import Link from "next/link";
-import style from "./style.module.css"
+import React from "react";
+import style from "./style.module.css"; // Make sure to import your CSS module
 
-const routes = [
-  {
-    name: "HOME",
-    href: "/",
-  },
-  {
-    name: "ABOUT",
-    href: "/about",
-  },
-  {
-    name: "CONTACT US",
-    href: "/contact",
-  },
-  ,
-  {
-    name: "SERVICES",
-    href: "",
-  },
-  {
-    name: "BOOK",
-    href: "",
-  },
-];
-
-export default function Navbar() {
+const Navbar = () => {
   return (
-    <header className={style.navbar}>
-      <nav className="flex items-center gap-12 py-8 px-6 text-xl">
-        {routes.map((route) => (
-          <Link
-            className="cursor-pointer navlink"
-            key={route.href}
-            href={route.href}
-          >
-            {route.name}
-          </Link>
-        ))}
+    <header className={`${style.navbar} ${style.stickyNavbar}`}>
+      <nav
+        className={`flex items-center gap-12 mx-4 py-6 px-10 text-2xl font-bold ${style.navLinks}`}
+      >
+        <Link href="#home" scroll={true} className={style.smoothscroll}>
+          HOME
+        </Link>
+        <Link href="#projects" scroll={true} className={style.smoothscroll}>
+          PROJECTS
+        </Link>
+        <Link href="#service" scroll={true} className={style.smoothscroll}>
+          SERVICES
+        </Link>
+        <Link
+          href="#testimonial"
+          scroll={true}
+          className={style.smoothscroll}
+        >
+          TESTIMONIALS
+        </Link>
+        <Link href="#price" scroll={true} className={style.smoothscroll}>
+          PRICE
+        </Link>
       </nav>
     </header>
   );
-}
+};
+
+export default Navbar;

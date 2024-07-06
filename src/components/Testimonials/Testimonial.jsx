@@ -6,18 +6,24 @@ import Lenis from "lenis";
 import { useTransform, useScroll, motion } from "framer-motion";
 
 const images = [
-  "s1.jpg",
-  "s2.jpg",
-  "s3.jpg",
-  "s4.jpg",
-  "s5.jpg",
-  "img1.jpeg",
-  "img2.jpeg",
-  "img3.jpeg",
-  "s1.jpg",
-  "s2.jpg",
-  "s3.jpg",
-  "s4.jpg",
+  "4(1).png",
+  "5.png",
+  "6.png",
+  "7.png",
+  "8.png",
+  "9.png",
+  "4(1).png",
+  "5.png",
+  "6.png",
+  "7.png",
+  "8.png",
+  "9.png",
+  "4(1).png",
+  "5.png",
+  "6.png",
+  "7.png",
+  "8.png",
+  "9.png",
 ];
 
 export default function Testimonial() {
@@ -29,7 +35,7 @@ export default function Testimonial() {
     offset: ["start end", "end start"],
   });
   const { height } = dimension;
-  const y = useTransform(scrollYProgress, [0, 1], [0, height * 2]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, height * 0.5]);
   const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 3.3]);
   const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 1.25]);
   const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 3]);
@@ -56,7 +62,7 @@ export default function Testimonial() {
   }, []);
 
   return (
-    <main className={styles.main}>
+    <main id="testimonial" className={styles.main}>
       <div className={styles.spacer}>Testimonial</div>
       <div ref={gallery} className={styles.gallery}>
         <Column images={[images[0], images[1], images[2]]} y={y} />

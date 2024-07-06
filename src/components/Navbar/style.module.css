@@ -1,6 +1,21 @@
-.navbar{
-    position: absolute;
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
     z-index: 1;
-    color: whitesmoke;
-    font-weight: 500;
 }
+
+.navLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .smoothscroll {
+        color: black;
+            scroll-behavior: smooth;
+            transition: all 0.7s ease-in-out;
+            /* Adjust duration and easing as needed */
+    }

@@ -5,8 +5,8 @@ import { useRef } from "react";
 
 const Project = () => {
   return (
-    <div >
-      <div className="flex h-48 items-center justify-center">
+    <div id="projects">
+      <div className="flex my-100 items-center justify-center">
         <span
           data-scroll
           data-scroll-speed="0.1"

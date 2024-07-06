@@ -9,6 +9,10 @@ import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "../components/Preloader";
 import Testimonial from "@/components/Testimonials/Testimonial";
+import Prices from "@/components/Prices/Prices";
+import Services from "@/components/Services1/Services";
+import ContactUs from "@/components/Contact/ContactUs";
+import Team from "@/components/Team/Team";
 export default function Home() {
 
   const [isLoading, setIsLoading] = useState(true);
@@ -34,10 +38,13 @@ export default function Home() {
         {isLoading && <Preloader />}
       </AnimatePresence>
       <Header />
-      <Description />
+      <Description /> 
       <Project />
+      <Services/>
       <Testimonial />
-      {/* <Comp /> */}
+      <Prices/>
+      <Team/>
+      <ContactUs/>
       <Footer />
     </>
   );
