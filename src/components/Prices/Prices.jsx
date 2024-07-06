@@ -1,7 +1,7 @@
 
 export default function Prices(){
     return (
-      <section class="bg-white bg-black">
+      <section class= "bg-black"> 
         <h1
           id="price"
           className="flex items-center justify-center text-6xl font-bold text-white"
