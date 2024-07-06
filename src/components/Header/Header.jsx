@@ -45,17 +45,37 @@ export default function Header() {
         <div className={styles.container}>
           <h1 className={styles.intro}>We Build Websites For</h1>
           <h1 className={styles.intro}>E-commerce Brands</h1>
-          <button
-            className={`btn ${styles.callBtn} ${styles.btnSm} ${styles.btnMd} ${styles.btnLg}`}
-          >
-            Book a Call
-          </button>
-          <div className="w-full md:w-1/2">
-            <p className={styles.description}>
-              Explore our diverse portfolio of innovative web designs and
-              successful projects. Each piece reflects our commitment to
-              quality, creativity, and client satisfaction.
-            </p>
+          <a href="https://calendly.com/subadha-co-in/subadha">
+            <button
+              className={`btn ${styles.callBtn} ${styles.btnSm} ${styles.btnMd} ${styles.btnLg}`}
+            >
+              Book a Call
+            </button>
+          </a>
+          <script
+            type="text/javascript"
+            src="https://assets.calendly.com/assets/external/widget.js"
+            async
+          ></script>
+          <div className="flex flex-col md:flex-row mt-8 w-full">
+            <div className="flex-1 mb-4 md:mb-0 md:mr-4">
+              <p className="text-lg">
+                Explore our diverse portfolio of innovative web designs and
+                successful projects.
+                <p>
+                  Each piece reflects our commitment to quality, creativity, and
+                  client satisfaction.
+                </p>
+              </p>
+            </div>
+            <div className=" flex-2 justify-end -mt-10 md:-mt-32 top-30 right-10">
+              <Image
+                src="/images/logo.png"
+                height={400}
+                width={400}
+                alt="Logo"
+              />
+            </div>
           </div>
         </div>
       </div>

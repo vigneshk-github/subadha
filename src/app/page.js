@@ -13,6 +13,7 @@ import Prices from "@/components/Prices/Prices";
 import Services from "@/components/Services1/Services";
 import ContactUs from "@/components/Contact/ContactUs";
 import Team from "@/components/Team/Team";
+import Timeline from "@/components/Timeline/Timeline";
 export default function Home() {
 
   const [isLoading, setIsLoading] = useState(true);
@@ -43,6 +44,7 @@ export default function Home() {
       <Services/>
       <Testimonial />
       <Prices/>
+      {/* <Timeline/> */}
       <Team/>
       <ContactUs/>
       <Footer />

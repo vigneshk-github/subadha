@@ -1,17 +1,11 @@
 "use client";
-import {
-  Link,
-  Button,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-} from "react-scroll";
+import Link from "next/link";
 import style from "./style.module.css";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import XIcon from "@mui/icons-material/X";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -43,13 +37,13 @@ export default function Footer() {
             </Link>
           </span>
           <span>
-            <Link
-              href=""
+            {/* <Link
+              href="#"
               target="_blank"
               className="flex items-center gap-2 hover:text-pink-500 transition"
-            >
-              <InstagramIcon /> Instagram
-            </Link>
+            > */}
+            <InstagramIcon /> Instagram
+            {/* </Link> */}
           </span>
           <span>
             <Link
@@ -70,11 +64,8 @@ export default function Footer() {
             </Link>
           </span>
         </div>
-        <a
-          onClick={scrollToTop}
-          className="cursor-pointer text-lg hover:underline mb-8"
-        >
-          To the top!
+        <a href="/" className="cursor-pointer text-lg  mb-8">
+          Go to Top<ArrowUpwardIcon>To the top!</ArrowUpwardIcon>
         </a>
         <div className={style.copy + " text-center"}>
           © 2024 Subadha | All Rights Reserved
