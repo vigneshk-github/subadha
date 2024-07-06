@@ -13,8 +13,8 @@ function ContactUs() {
             Book a consultation with our expert team to kickstart your project.
           </p>
           <p className="mb-4">
-            Let's collaborate to craft a stunning digital solution tailored just
-            for you.
+            Let&apos;s collaborate to craft a stunning digital solution tailored
+            just for you.
           </p>
         </div>
         <div className="max-w-lg md:max-w-xl mx-auto">
