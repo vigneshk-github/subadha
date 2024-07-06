@@ -1,7 +1,7 @@
 .main {
     position: relative;
     display: flex;
-    height: 100vh;
+    height: 150vh;
     margin-bottom: 10vh;
     overflow: hidden;
 }
@@ -12,7 +12,7 @@
 
 .sliderContainer {
     position: absolute;
-    top: 400px;
+    top: 500px;
 }
 
 .slider {
@@ -44,4 +44,8 @@
     font-size: 40px;
     padding-left: 40px;
     font-weight: 500;
+}
+
+.description{
+    font-size: 20px;
 }

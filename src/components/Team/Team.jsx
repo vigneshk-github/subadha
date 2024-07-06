@@ -1,5 +1,6 @@
 import Image from "next/image";
-
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import Link from "next/link";
 export default function Team() {
   return (
     <div className="flex flex-col items-center justify-center px-6 py-12 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white my-16">
@@ -12,72 +13,100 @@ export default function Team() {
       </p>
 
       <div className="flex flex-wrap justify-center gap-8">
-        <figure className="relative w-48 h-48 md:w-64 md:h-64 transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
-          <a href="#">
+        <figure className="relative w-48 h-48 md:w-64 md:h-64 transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 shadow-lg rounded-lg overflow-hidden">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/kalyan-g-45391b217/"
+            className="block w-full h-full"
+          >
             <Image
+              src="/images/m2.jpg"
               width={256}
               height={256}
-              className="rounded-lg object-cover w-full h-full"
-              src="/images/m1.jpg"
+              className="object-cover w-full h-full"
               alt="Team Member 1"
             />
+
+            <figcaption className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white px-4 py-3">
+              <p className="text-lg font-semibold text-gray-200 mb-1">
+                Kalyan Gopu
+              </p>
+              <p className="text-sm text-gray-300">Founder of Subadha</p>
+              <LinkedInIcon className="text-gray-300 inline-block h-5 w-5 mt-1"></LinkedInIcon>
+            </figcaption>
           </a>
-          <figcaption className="absolute px-4 text-lg text-white bottom-6">
-            <p className="bg-black bg-opacity-50 rounded-lg p-2">
-              Team Member 1
-            </p>
-          </figcaption>
         </figure>
 
-        <figure className="relative w-48 h-48 md:w-64 md:h-64 transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
-          <a href="#">
+        <figure className="relative w-48 h-48 md:w-64 md:h-64 transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 shadow-lg rounded-lg overflow-hidden">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/vignesh-kamatam-a1ba7120a/"
+            className="block w-full h-full"
+          >
             <Image
-              width={256}
-              height={256}
-              className="rounded-lg object-cover w-full h-full"
-              src="/images/m2.jpg"
-              alt="Team Member 2"
-            />
-          </a>
-          <figcaption className="absolute px-4 text-lg text-white bottom-6">
-            <p className="bg-black bg-opacity-50 rounded-lg p-2">
-              Team Member 2
-            </p>
-          </figcaption>
-        </figure>
-
-        <figure className="relative w-48 h-48 md:w-64 md:h-64 transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
-          <a href="#">
-            <Image
-              width={256}
-              height={256}
-              className="rounded-lg object-cover w-full h-full"
-              src="/images/m3.jpg"
-              alt="Team Member 3"
-            />
-          </a>
-          <figcaption className="absolute px-4 text-lg text-white bottom-6">
-            <p className="bg-black bg-opacity-50 rounded-lg p-2">
-              Team Member 3
-            </p>
-          </figcaption>
-        </figure>
-
-        <figure className="relative w-48 h-48 md:w-64 md:h-64 transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
-          <a href="#">
-            <Image
-              width={256}
-              height={256}
-              className="rounded-lg object-cover w-full h-full"
               src="/images/m4.png"
-              alt="Team Member 4"
+              width={256}
+              height={256}
+              className="object-cover w-full h-full"
+              alt="Team Member 1"
             />
+
+            <figcaption className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white px-4 py-3">
+              <p className="text-lg font-semibold text-gray-200 mb-1">
+                Vignesh
+              </p>
+              <p className="text-sm text-gray-300">Web Developer</p>
+              <LinkedInIcon className="text-gray-300 inline-block h-5 w-5 mt-1"></LinkedInIcon>
+            </figcaption>
           </a>
-          <figcaption className="absolute px-4 text-lg text-white bottom-6">
-            <p className="bg-black bg-opacity-50 rounded-lg p-2">
-              Team Member 4
-            </p>
-          </figcaption>
+        </figure>
+
+        <figure className="relative w-48 h-48 md:w-64 md:h-64 transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 shadow-lg rounded-lg overflow-hidden">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/nithin-kumar-elamshetty/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            className="block w-full h-full"
+          >
+            <Image
+              src="/images/m3.jpg"
+              width={256}
+              height={256}
+              className="object-cover w-full h-full"
+              alt="Team Member 1"
+            />
+
+            <figcaption className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white px-4 py-3">
+              <p className="text-lg font-semibold text-gray-200 mb-1">
+                Nithin Kumar
+              </p>
+              <p className="text-sm text-gray-300">Web Designer</p>
+              <LinkedInIcon className="text-gray-300 inline-block h-5 w-5 mt-1"></LinkedInIcon>
+            </figcaption>
+          </a>
+        </figure>
+
+        <figure className="relative w-48 h-48 md:w-64 md:h-64 transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 shadow-lg rounded-lg overflow-hidden">
+          <a
+            target="_blank"
+            href="https://raghav129.github.io/myportfolio/"
+            className="block w-full h-full"
+          >
+            <Image
+              src="/images/m1.jpg"
+              width={256}
+              height={256}
+              className="object-cover w-full h-full"
+              alt="Team Member 1"
+            />
+
+            <figcaption className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white px-4 py-3">
+              <p className="text-lg font-semibold text-gray-200 mb-1">
+                Raghavendra
+              </p>
+              <p className="text-sm text-gray-300">Client Manager</p>
+              <LinkedInIcon className="text-gray-300 inline-block h-5 w-5 mt-1"></LinkedInIcon>
+            </figcaption>
+          </a>
         </figure>
       </div>
     </div>

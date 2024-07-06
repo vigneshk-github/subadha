@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
+import { Link } from "react-scroll";
 
 
 const Project = () => {
@@ -33,7 +34,9 @@ const HorizontalScrollCarousel = () => {
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-10">
           {cards.map((card) => {
-            return <Card card={card} key={card.id} />;
+            return (
+              <Card card={card} key={card.id} link={card.link}/>
+            );
           })}
         </motion.div>
       </div>
@@ -47,19 +50,21 @@ const Card = ({ card }) => {
       key={card.id}
       className="group relative h-[350px] w-[550px] overflow-hidden"
     >
-      <div
-        style={{
-          backgroundImage: `url(${card.url})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-        className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
-      ></div>
-      <div className="absolute inset-0 z-10 grid place-content-center">
-        <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
-          {card.title}
-        </p>
-      </div>
+      <a href={card.link} target="_blank">
+        <div
+          style={{
+            backgroundImage: `url(${card.url})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+          className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
+        ></div>
+        <div className="absolute inset-0 z-10 grid place-content-center">
+          <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
+            {card.title}
+          </p>
+        </div>
+      </a>
     </div>
   );
 };
@@ -68,28 +73,33 @@ export default Project;
 
 const cards = [
   {
-    url: "/images/s1.jpg",
+    url: "/images/p1.png",
     title: "Title 1",
     id: 1,
+    link: "https://savegreenecobags.com/",
   },
   {
-    url: "/images/s2.jpg",
+    url: "/images/p2.png",
     title: "Title 2",
     id: 2,
+    link: "https://esratechedu.com/",
   },
   {
-    url: "/images/s3.jpg",
+    url: "/images/p3.png",
     title: "Title 3",
     id: 3,
+    link: "https://fmgreenindustry.com/",
   },
   {
-    url: "/images/s4.jpg",
+    url: "/images/p4.png",
     title: "Title 4",
     id: 4,
+    link: "https://sricmrinfra.com/",
   },
   {
-    url: "/images/s5.jpg",
+    url: "/images/p5.png",
     title: "Title 5",
     id: 5,
+    link: "https://gfemsolutions.com/",
   },
 ];

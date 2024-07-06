@@ -42,11 +42,22 @@ export default function Header() {
   return (
     <div id="home" className={styles.main}>
       <div data-scroll data-scroll-speed="0.3" className={styles.header}>
-        <h1 className={styles.intro}>We Build Websites For</h1>
-        <h1 className={styles.intro}>E-commerce Brands</h1>
-        <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
-          Book a Call
-        </button>
+        <div className={styles.container}>
+          <h1 className={styles.intro}>We Build Websites For</h1>
+          <h1 className={styles.intro}>E-commerce Brands</h1>
+          <button
+            className={`btn ${styles.callBtn} ${styles.btnSm} ${styles.btnMd} ${styles.btnLg}`}
+          >
+            Book a Call
+          </button>
+          <div className="w-full md:w-1/2">
+            <p className={styles.description}>
+              Explore our diverse portfolio of innovative web designs and
+              successful projects. Each piece reflects our commitment to
+              quality, creativity, and client satisfaction.
+            </p>
+          </div>
+        </div>
       </div>
 
       <div className={styles.sliderContainer}>

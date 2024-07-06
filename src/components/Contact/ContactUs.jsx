@@ -17,7 +17,7 @@ function ContactUs() {
             just for you.
           </p>
         </div>
-        <div className="max-w-lg md:max-w-xl mx-auto">
+        <div className="max-w-md md:max-w-xl mx-auto">
           <form className="bg-gray-800 shadow-md rounded px-8 pt-6 pb-8 mb-4">
             <div className="mb-4">
               <label

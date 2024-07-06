@@ -1,5 +1,5 @@
 .gallery {
-    height: 175vh;
+    height: 155vh;
     background: rgb(45, 45, 45);
     position: relative;
     display: flex;
@@ -11,8 +11,8 @@
     .column {
         position: relative;
         height: 100%;
-        width: 25%;
-        min-width: 250px;
+        width: 1000px;
+        // min-width: 250px;
         display: flex;
         flex-direction: column;
         gap: 2vw;
