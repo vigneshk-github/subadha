@@ -44,7 +44,7 @@ export default function Home() {
       <Services/>
       <Testimonial />
       <Prices/>
-      {/* <Timeline/> */}
+      <Timeline/>
       <Team/>
       <ContactUs/>
       <Footer />
