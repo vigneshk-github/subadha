@@ -27,6 +27,12 @@ export default function Prices() {
               <span className="mr-2 text-5xl font-extrabold">₹1,27,990</span>
               <span className="text-gray-500 dark:text-gray-400">/month</span>
             </div>
+            <button
+              type="button"
+              class="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
+            >
+              Book a Call
+            </button>
             <ul role="list" className="mb-8 space-y-4 text-left">
               <li className="flex items-center space-x-3">
                 <svg
@@ -92,11 +98,7 @@ export default function Prices() {
             <a
               href="https://calendly.com/subadha-co-in/subadha"
               className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900"
-            >
-              <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
-                Book a Call
-              </button>
-            </a>
+            ></a>
           </div>
           <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
             <h3 className="mb-4 text-2xl font-semibold">Premium Plan</h3>
@@ -107,6 +109,12 @@ export default function Prices() {
               <span className="mr-2 text-5xl font-extrabold">₹3,25,990</span>
               <span className="text-gray-500 dark:text-gray-400">/month</span>
             </div>
+            <button
+              type="button"
+              class="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
+            >
+              Book a Call
+            </button>
             <ul role="list" className="mb-8 space-y-4 text-left">
               <li className="flex items-center space-x-3">
                 <svg
@@ -187,11 +195,7 @@ export default function Prices() {
             <a
               href="https://calendly.com/subadha-co-in/subadha"
               className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900"
-            >
-              <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
-                Book a Call
-              </button>
-            </a>
+            ></a>
           </div>
           <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
             <h3 className="mb-4 text-2xl font-semibold">Design Mockup</h3>
@@ -202,6 +206,12 @@ export default function Prices() {
               <span className="mr-2 text-5xl font-extrabold">0₹</span>
               <span className="text-gray-500 dark:text-gray-400">/month</span>
             </div>
+            <button
+              type="button"
+              class="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
+            >
+              Book a Call
+            </button>
             <ul role="list" className="mb-8 space-y-4 text-left">
               <li className="flex items-center space-x-3">
                 <svg
@@ -238,9 +248,6 @@ export default function Prices() {
               href="https://calendly.com/subadha-co-in/subadha"
               className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900"
             >
-              <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
-                Book a Call
-              </button>
             </a>
           </div>
         </div>

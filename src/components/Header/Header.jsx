@@ -4,8 +4,10 @@ import styles from "./style.module.css";
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import { useGSAP } from "@gsap/react";
 
 export default function Header() {
+  const transition = { duration: 2, type: "spring" };
   const firstText = useRef(null);
   const secondText = useRef(null);
   const slider = useRef(null);
@@ -39,6 +41,19 @@ export default function Header() {
     xPercent += 0.05 * direction;
   };
 
+    useGSAP(()=>{
+      gsap.fromTo("#img",{
+        x:0,
+      }
+        ,{
+        x:-350,
+        repeat:-1,
+        yoyo:true,
+        duration:4,
+        ease:"bounce.in"
+      })
+    },[])
+
   return (
     <div id="home" className={styles.main}>
       <div data-scroll data-scroll-speed="0.3" className={styles.header}>
@@ -47,7 +62,8 @@ export default function Header() {
           <h1 className={styles.intro}>E-commerce Brands</h1>
           <a href="https://calendly.com/subadha-co-in/subadha">
             <button
-              className={`btn ${styles.callBtn} ${styles.btnSm} ${styles.btnMd} ${styles.btnLg}`}
+              type="button"
+              class="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
             >
               Book a Call
             </button>
@@ -68,9 +84,12 @@ export default function Header() {
                 </p>
               </p>
             </div>
-            <div className=" flex-2 justify-end -mt-10 md:-mt-32 top-30 right-10">
+            <div
+              id="img"
+              className="flex-2 justify-end -mt-10 md:-mt-32 top-20 right-10"
+            >
               <Image
-                src="/images/logo.png"
+                src="/images/emoji1.png"
                 height={400}
                 width={400}
                 alt="Logo"
@@ -82,8 +101,8 @@ export default function Header() {
 
       <div className={styles.sliderContainer}>
         <div ref={slider} className={styles.slider}>
-          <p ref={firstText}>Freelance Developer -</p>
-          <p ref={secondText}>Freelance Developer -</p>
+          <p ref={firstText}>Subadha SERVICES-</p>
+          <p ref={secondText}>Subadha SERVICES-</p>
         </div>
       </div>
     </div>

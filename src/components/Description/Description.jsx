@@ -3,6 +3,8 @@ import style from "./style.module.css";
 import { useRef, useLayoutEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -14,8 +16,21 @@ export default function Description() {
     "Let's take your digital presence to next level."
   ];
 
+      useGSAP(() => {
+        gsap.to("#img", {
+          y: 350,
+          repeat: -1,
+          yoyo: true,
+          duration: 4,
+          ease: "bounce.in",
+        });
+      }, []);
+
   return (
     <div className={style.description}>
+      <div>
+        <Image id="img" src="/images/emoji2.png" width={300} height={300} />
+      </div>
       {phrases.map((phrase, index) => {
         return <AnimatedText key={index}>{phrase}</AnimatedText>;
       })}

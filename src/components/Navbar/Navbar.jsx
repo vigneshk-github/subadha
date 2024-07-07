@@ -4,7 +4,8 @@ import style from "./style.module.css"; // Make sure to import your CSS module
 
 const Navbar = () => {
   return (
-    <header className={`${style.navbar} ${style.stickyNavbar}`}>
+    <header className={style.navbar}>
+      <div className={style.navbarBackground}></div>
       <nav
         className={`flex items-center gap-12 mx-4 py-6 px-10 text-2xl font-bold ${style.navLinks}`}
       >
@@ -17,11 +18,7 @@ const Navbar = () => {
         <Link href="#service" scroll={true} className={style.smoothscroll}>
           SERVICES
         </Link>
-        <Link
-          href="#testimonial"
-          scroll={true}
-          className={style.smoothscroll}
-        >
+        <Link href="#testimonial" scroll={true} className={style.smoothscroll}>
           TESTIMONIALS
         </Link>
         <Link href="#price" scroll={true} className={style.smoothscroll}>
