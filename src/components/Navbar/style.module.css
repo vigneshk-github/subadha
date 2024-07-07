@@ -1,12 +1,15 @@
 .navbar {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: 20px;
+    left: 50px;
+    right: 50px;
     z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .navbarBackground {
@@ -19,55 +22,6 @@
     backdrop-filter: blur(10px);
     opacity: 0.4;
     z-index: -1;
-}
-
-.navLinks {
-    position: relative;
-    color: white;
-    /* Set text color to white */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.smoothscroll {
-    text-decoration: none;
-    color: inherit;
-    /* Inherit color from navLinks */
-}
-
-.flex {
-    display: flex;
-}
-
-.items-center {
-    align-items: center;
-}
-
-.gap-12 {
-    gap: 3rem;
-    /* Adjust as necessary */
-}
-
-.mx-4 {
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-.py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-}
-
-.px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-}
-
-.text-2xl {
-    font-size: 1.5rem;
-}
-
-.font-bold {
-    font-weight: bold;
+    border-radius: 50px;
+    /* Fully rounded corners to match the navbar */
 }

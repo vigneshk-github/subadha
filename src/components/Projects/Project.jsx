@@ -47,7 +47,7 @@ const Card = ({ card }) => {
   return (
     <div
       key={card.id}
-      className="group relative h-[350px] w-[550px] overflow-hidden"
+      className="group relative h-[350px] w-[720px] overflow-hidden"
     >
       <a href={card.link} target="_blank">
         <div
@@ -55,8 +55,10 @@ const Card = ({ card }) => {
             backgroundImage: `url(${card.url})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
+            width: "100%",
+            height: "100%",
           }}
-          className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-90"
+          className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
         ></div>
       </a>
     </div>

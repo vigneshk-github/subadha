@@ -5,6 +5,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import XIcon from "@mui/icons-material/X";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import EmailIcon from "@mui/icons-material/Email";
 
 export default function Footer(){
   return (
@@ -53,6 +54,15 @@ export default function Footer(){
           <div className="grid grid-flow-col gap-4">
             <span>
               <Link
+                href="mailto:subadha.co.in@gmail.com"
+                target="_blank"
+                className="flex items-center gap-2 hover:text-red-700 transition"
+              >
+                <EmailIcon /> Email
+              </Link>
+            </span>
+            <span>
+              <Link
                 href="https://www.facebook.com/profile.php?id=61561972772982&mibextid=ZbWKwL"
                 target="_blank"
                 className="flex items-center gap-2 hover:text-blue-700 transition"
@@ -80,7 +90,7 @@ export default function Footer(){
             </span>
             <span>
               <Link
-                href="#"
+                href="https://www.instagram.com/subadha.co.in?igsh=dGg5NGVsYzU2Nnps"
                 target="_blank"
                 className="flex items-center gap-2 hover:text-pink-500 transition"
               >
