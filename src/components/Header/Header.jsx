@@ -38,7 +38,7 @@ export default function Header() {
     gsap.set(firstText.current, { xPercent: xPercent });
     gsap.set(secondText.current, { xPercent: xPercent });
     requestAnimationFrame(animate);
-    xPercent += 0.05 * direction;
+    xPercent += 0.5 * direction;
   };
 
     useGSAP(()=>{
@@ -46,7 +46,7 @@ export default function Header() {
         x:0,
       }
         ,{
-        x:-350,
+        x:500,
         repeat:-1,
         yoyo:true,
         duration:4,

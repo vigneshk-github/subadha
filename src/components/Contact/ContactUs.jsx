@@ -7,7 +7,7 @@ function ContactUs() {
         Contact Us
       </h2>
       <div className="container mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-center">
-        <div className="max-w-md md:mr-8 mb-8 md:mb-0 text-center md:text-left">
+        <div className="flex flex-col mx-20 max-w-md md:mr-8 mb-8 md:mb-0 text-center md:text-left">
           <h2 className="text-3xl mb-4">Still have any questions?</h2>
           <p className="mb-4">
             Book a consultation with our expert team to kickstart your project.

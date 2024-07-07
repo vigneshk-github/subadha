@@ -3,7 +3,7 @@
     font-size: 3vw;
     color: white;
     text-transform: uppercase;
-    margin-top: 5vw;
+    margin-top: -300px;
     margin-left: 10vw;
     margin-bottom: 100px;
 }
@@ -11,5 +11,5 @@
 .description p{
     position: relative;
     margin: 0px;
-    font-weight: 500;
+    font-weight: 800;
 }

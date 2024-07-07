@@ -17,7 +17,7 @@ export default function Description() {
   ];
 
       useGSAP(() => {
-        gsap.to("#img", {
+        gsap.to("#img1", {
           y: 350,
           repeat: -1,
           yoyo: true,
@@ -29,7 +29,7 @@ export default function Description() {
   return (
     <div className={style.description}>
       <div>
-        <Image id="img" src="/images/emoji2.png" width={300} height={300} />
+        <Image id="img1" src="/images/emoji2.png" width={300} height={300} />
       </div>
       {phrases.map((phrase, index) => {
         return <AnimatedText key={index}>{phrase}</AnimatedText>;

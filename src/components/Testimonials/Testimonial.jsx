@@ -24,6 +24,18 @@ const images = [
   "7.png",
   "8.png",
   "9.png",
+  "4(1).png",
+  "5.png",
+  "6.png",
+  "7.png",
+  "8.png",
+  "9.png",
+  "4(1).png",
+  "5.png",
+  "6.png",
+  "7.png",
+  "8.png",
+  "9.png",
 ];
 
 export default function Testimonial() {
