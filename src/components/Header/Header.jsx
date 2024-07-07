@@ -43,7 +43,7 @@ export default function Header() {
 
     useGSAP(()=>{
       gsap.fromTo("#img",{
-        x:0,
+        x:20,
       }
         ,{
         x:500,

@@ -1,7 +1,6 @@
-import Image from "next/image";
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
-import { Link } from "react-scroll";
+
 
 
 const Project = () => {
@@ -57,7 +56,7 @@ const Card = ({ card }) => {
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
-          className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
+          className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-90"
         ></div>
       </a>
     </div>
