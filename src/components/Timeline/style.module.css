@@ -1,0 +1,37 @@
+.body {
+    overflow-x: hidden;
+}
+
+.App {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 40px;
+    margin: 20px 120px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    color: black;
+
+}
+
+.card:nth-child(odd) {
+    align-self: flex-end;
+}
+
+.card-text {
+    color: #fff;
+}
+.cardheading{
+    font-size: 40px;
+}

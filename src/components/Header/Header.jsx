@@ -5,6 +5,7 @@ import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useGSAP } from "@gsap/react";
+import { motion } from "framer-motion";
 
 export default function Header() {
   const transition = { duration: 2, type: "spring" };
@@ -41,71 +42,94 @@ export default function Header() {
     xPercent += 0.5 * direction;
   };
 
-    useGSAP(()=>{
-      gsap.fromTo("#img",{
-        x:20,
+  useGSAP(() => {
+    gsap.fromTo(
+      "#img",
+      {
+        x: 20,
+      },
+      {
+        x: 500,
+        repeat: -1,
+        yoyo: true,
+        duration: 4,
+        ease: "bounce.in",
       }
-        ,{
-        x:500,
-        repeat:-1,
-        yoyo:true,
-        duration:4,
-        ease:"bounce.in"
-      })
-    },[])
+    );
+  }, []);
 
   return (
     <div id="home" className={styles.main}>
-      <div data-scroll data-scroll-speed="0.3" className={styles.header}>
-        <div className={styles.container}>
-          <h1 className={styles.intro}>We Build Websites For</h1>
-          <h1 className={styles.intro}>For Your Brands</h1>
-          <a href="https://calendly.com/subadha-co-in/subadha">
-            <button
-              type="button"
-              class="bg-slate-400 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
-            >
-              Book a Call
-            </button>
-          </a>
-          <script
-            type="text/javascript"
-            src="https://assets.calendly.com/assets/external/widget.js"
-            async
-          ></script>
-          <div className="flex flex-col md:flex-row mt-8 w-full">
-            <div className="flex-1 mb-4 md:mb-0 md:mr-4">
-              <p className="text-lg">
-                Explore our diverse portfolio of innovative web designs and
-                successful projects.
-                <p>
-                  Each piece reflects our commitment to quality, creativity, and
-                  client satisfaction.
+      <motion.div
+        initial={{
+          opacity: 0,
+          y: 100,
+        }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 2,
+          },
+        }}
+        viewport={{ once: true }}
+      >
+        <div data-scroll data-scroll-speed="0.3" className={styles.header}>
+          <div className={styles.container}>
+            <h1 className={styles.intro}>We Build Websites For</h1>
+            <h1 className={styles.intro}>For Your Brands</h1>
+            <a href="https://calendly.com/subadha-co-in/subadha">
+              <button
+                type="button"
+                class="ml-10 bg-slate-400 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
+              >
+                Book a Call
+              </button>
+            </a>
+            <a href="#projects">
+              <button
+                type="button"
+                class="ml-10 bg-slate-400 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
+              >
+                Projects
+              </button>
+            </a>
+            <script
+              type="text/javascript"
+              src="https://assets.calendly.com/assets/external/widget.js"
+              async
+            ></script>
+            <div className="flex flex-col md:flex-row mt-8 w-full">
+              <div className="flex-1 mb-4 md:mb-0 md:mr-4">
+                <p className="px-50 pr-50 text-lg pl-10">
+                  Explore our diverse portfolio of innovative web designs and
+                  successful projects.Each piece reflects our commitment to
+                  quality, creativity, and client satisfaction.
                 </p>
-              </p>
-            </div>
-            <div
-              id="img"
-              className="flex-2 justify-end -mt-10 md:-mt-32 top-20 right-10"
-            >
-              <Image
-                src="/images/emoji1.png"
-                height={400}
-                width={400}
-                alt="Logo"
-                className={styles.responsiveImage} // Add a class for styling
-              />
+              </div>
+              <div
+                id="img"
+                className="flex-2 justify-end -mt-10 md:-mt-32 top-20 right-10"
+              >
+                <Image
+                  src="/images/emoji1.png"
+                  height={400}
+                  width={400}
+                  alt="Logo"
+                  className={styles.responsiveImage} // Add a class for styling
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className={styles.sliderContainer}>
-        <div ref={slider} className={styles.slider}>
-          <p ref={firstText}>Subadha SERVICES -</p>
-          <p ref={secondText}>Subadha SERVICES -</p>
+        <div className={styles.sliderContainer}>
+          <div ref={slider} className={styles.slider}>
+            <p ref={firstText}>Subadha SERVICES FOR YOU -</p>
+            <p ref={secondText}>Subadha SERVICES FOR YOU -</p>
+          </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

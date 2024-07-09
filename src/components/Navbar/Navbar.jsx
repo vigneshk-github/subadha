@@ -10,21 +10,21 @@ const Navbar = () => {
       <nav
         className={`flex items-center gap-12 mx-4 py-6 px-10 text-2xl font-bold ${style.navLinks}`}
       >
-      <Image src="/images/logo.png" width={100} height={100}/>
-        <Link href="#home" scroll={true} className={style.smoothscroll}>
-          HOME
+      <Image src="/images/logo1.jpg" width={100} height={100}/>
+        <Link href="/" scroll={true} className={style.smoothscroll}>
+          Home
         </Link>
         <Link href="#projects" scroll={true} className={style.smoothscroll}>
-          PROJECTS
+          Projects
         </Link>
         <Link href="#service" scroll={true} className={style.smoothscroll}>
-          SERVICES
+          Services
         </Link>
         <Link href="#testimonial" scroll={true} className={style.smoothscroll}>
-          TESTIMONIALS
+          Testimonials
         </Link>
         <Link href="#contactus" scroll={true} className={style.smoothscroll}>
-          CONTACT US
+          Contact Us
         </Link>
       </nav>
     </header>

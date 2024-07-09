@@ -52,9 +52,8 @@ export default function Home() {
       <Timeline/>
       <Team/>
       <ContactUs/>
-      <Clientform/>
+      {/* <Clientform/> */}
       <Faq/>
-      <Footer />
     </>
   );
 }

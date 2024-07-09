@@ -2,7 +2,7 @@
     position: relative;
     display: flex;
     height: 150vh;
-    margin-bottom: 10vh;
+    margin-bottom: -15vh;
     overflow: hidden;
 }
 
@@ -25,10 +25,9 @@
     position: relative;
     margin: 0px;
     color: white;
-    font-size: 120px;
+    font-size: 100px;
     font-weight: 700;
     padding-right: 50px;
-
 }
 
 .slider p:nth-of-type(2) {
@@ -49,10 +48,12 @@
 
 .description{
     font-size: 20px;
+    
 }
 
 .intro{
     color: white;
+    margin-left: 40px;
 }
 
 .responsiveImage {

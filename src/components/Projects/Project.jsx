@@ -6,15 +6,6 @@ import { useRef } from "react";
 const Project = () => {
   return (
     <div id="projects">
-      <div className="flex my-100 items-center justify-center">
-        <span
-          data-scroll
-          data-scroll-speed="0.1"
-          className="font-semibold uppercase text-white text-5xl"
-        >
-          Projects
-        </span>
-      </div>
       <HorizontalScrollCarousel />
     </div>
   );
@@ -26,16 +17,19 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-60%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["35%", "-30%"]);
 
   return (
     <section ref={targetRef} className="relative h-[300vh]">
-      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
+      <div className="flex-col sticky top-0 flex h-screen items-center overflow-hidden">
+        <div className="flex py-[-200px] pb-[-50px] items-center justify-center">
+          <span className="font-semibold mb-20 text-white text-5xl">
+            Projects
+          </span>
+        </div>
         <motion.div style={{ x }} className="flex gap-10">
           {cards.map((card) => {
-            return (
-              <Card card={card} key={card.id} link={card.link}/>
-            );
+            return <Card card={card} key={card.id} link={card.link} />;
           })}
         </motion.div>
       </div>
