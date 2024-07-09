@@ -10,7 +10,7 @@ export default function Timeline() {
         creativity, functionality, and client satisfaction.
       </p>
       <div className="relative">
-        <div className="border-l-4 border-blue-500 absolute h-full left-1/2 transform -translate-x-1/2"></div>
+        <div className="border-l-4 absolute h-full left-1/2 transform -translate-x-1/2"></div>
         <ul className="text-black list-none p-0 m-10 relative">
           <li className=" mb-10 relative">
             <div className=" timeline-start timeline-box bg-white border border-gray-200 rounded-lg p-6 w-4/5 mx-auto relative shadow-md">

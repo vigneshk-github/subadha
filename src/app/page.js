@@ -43,7 +43,7 @@ export default function Home() {
         {isLoading && <Preloader />}
       </AnimatePresence>
       <Header />
-      <Description /> 
+      {/* <Description />  */}
       <Project />
       <Services/>
       <Testimonial />

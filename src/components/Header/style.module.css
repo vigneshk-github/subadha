@@ -26,8 +26,9 @@
     margin: 0px;
     color: white;
     font-size: 120px;
-    font-weight: 500;
+    font-weight: 700;
     padding-right: 50px;
+
 }
 
 .slider p:nth-of-type(2) {
@@ -52,4 +53,25 @@
 
 .intro{
     color: white;
+}
+
+.responsiveImage {
+    max-width: 100%;
+    /* Ensures the image doesn't exceed its container */
+    height: auto;
+    /* Allows the image to maintain its aspect ratio */
+}
+
+@media (max-width: 768px) {
+    .responsiveImage {
+        max-width: 80%;
+        /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .responsiveImage {
+        max-width: 60%;
+        /* Further adjust width for very small screens */
+    }
 }

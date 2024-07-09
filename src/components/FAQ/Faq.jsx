@@ -26,10 +26,6 @@ const faqItems = [
 function Faq() {
   const [activeIndex, setActiveIndex] = useState(null);
 
-  const toggleAccordion = (index) => {
-    setActiveIndex(activeIndex === index ? null : index);
-  };
-
   return (
     <section className="py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -49,14 +45,10 @@ function Faq() {
               className={`accordion py-8 px-6 border-b border-solid border-gray-200 transition-all duration-500 rounded-2xl ${
                 activeIndex === index ? "bg-black" : ""
               }`}
-              onClick={() => toggleAccordion(index)}
+              onMouseEnter={() => setActiveIndex(index)}
+              onMouseLeave={() => setActiveIndex(null)}
             >
-              <button
-                className={`accordion-toggle group inline-flex items-center justify-between leading-8 text-white w-full transition duration-500 text-left ${
-                  activeIndex === index ? "text-white font-medium" : ""
-                }`}
-                aria-controls={`accordion-content-${index}`}
-              >
+              <div className="accordion-toggle group inline-flex items-center justify-between leading-8 text-white w-full transition duration-500 text-left">
                 <h3 className="text-2xl">{item.question}</h3>
                 <svg
                   className={`text-gray-500 transition duration-500 ${
@@ -76,7 +68,7 @@ function Faq() {
                     strokeLinejoin="round"
                   />
                 </svg>
-              </button>
+              </div>
               <div
                 id={`accordion-content-${index}`}
                 className="accordion-content w-full px-0 overflow-hidden transition-max-height duration-500 ease-in-out"

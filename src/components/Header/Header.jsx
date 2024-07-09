@@ -59,7 +59,7 @@ export default function Header() {
       <div data-scroll data-scroll-speed="0.3" className={styles.header}>
         <div className={styles.container}>
           <h1 className={styles.intro}>We Build Websites For</h1>
-          <h1 className={styles.intro}>E-commerce Brands</h1>
+          <h1 className={styles.intro}>For Your Brands</h1>
           <a href="https://calendly.com/subadha-co-in/subadha">
             <button
               type="button"
@@ -93,6 +93,7 @@ export default function Header() {
                 height={400}
                 width={400}
                 alt="Logo"
+                className={styles.responsiveImage} // Add a class for styling
               />
             </div>
           </div>
@@ -101,8 +102,8 @@ export default function Header() {
 
       <div className={styles.sliderContainer}>
         <div ref={slider} className={styles.slider}>
-          <p ref={firstText}>Subadha SERVICES-</p>
-          <p ref={secondText}>Subadha SERVICES-</p>
+          <p ref={firstText}>Subadha SERVICES -</p>
+          <p ref={secondText}>Subadha SERVICES -</p>
         </div>
       </div>
     </div>
