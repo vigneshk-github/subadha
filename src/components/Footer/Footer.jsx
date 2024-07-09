@@ -18,8 +18,8 @@ export default function Footer(){
         </nav>
         <nav>
           <h6 className="footer-title">Legal</h6>
-          <Link className="link link-hover" href="/terms">Terms of use</Link>
-          <Link className="link link-hover" href="privacy">Privacy policy</Link>
+          <Link className="link link-hover" href="/">Terms of use</Link>
+          <Link className="link link-hover" href="/">Privacy policy</Link>
           {/* <a className="link link-hover">Cookie policy</a> */}
         </nav>
       </footer>
