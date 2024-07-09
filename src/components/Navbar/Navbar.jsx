@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
-import style from "./style.module.css"; // Make sure to import your CSS module
+import style from "./style.module.css"; 
+import Image from "next/image";
 
 const Navbar = () => {
   return (
@@ -9,6 +10,7 @@ const Navbar = () => {
       <nav
         className={`flex items-center gap-12 mx-4 py-6 px-10 text-2xl font-bold ${style.navLinks}`}
       >
+      <Image src="/images/logo.png" width={100} height={100}/>
         <Link href="#home" scroll={true} className={style.smoothscroll}>
           HOME
         </Link>
