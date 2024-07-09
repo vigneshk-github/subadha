@@ -15,6 +15,7 @@ import ContactUs from "@/components/Contact/ContactUs";
 import Team from "@/components/Team/Team";
 import Timeline from "@/components/Timeline/Timeline";
 import Faq from "@/components/FAQ/Faq";
+import Clientform from "@/components/ClientForm/Clientform";
 export default function Home() {
 
   const [isLoading, setIsLoading] = useState(true);
@@ -51,6 +52,7 @@ export default function Home() {
       <Timeline/>
       <Team/>
       <ContactUs/>
+      <Clientform/>
       <Faq/>
       <Footer />
     </>
