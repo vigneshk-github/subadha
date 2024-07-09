@@ -21,8 +21,8 @@ const Navbar = () => {
         <Link href="#testimonial" scroll={true} className={style.smoothscroll}>
           TESTIMONIALS
         </Link>
-        <Link href="#price" scroll={true} className={style.smoothscroll}>
-          PRICE
+        <Link href="#contactus" scroll={true} className={style.smoothscroll}>
+          CONTACT US
         </Link>
       </nav>
     </header>
