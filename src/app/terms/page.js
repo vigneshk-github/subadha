@@ -4,7 +4,7 @@ import Footer from "@/components/Footer/Footer";
 
 const TermsConditions = () => {
   return (
-    <div className="bg-black text-white min-h-screen">
+    <div className="bg-black">
       <div className="relative flex flex-col justify-center mx-auto max-w-3xl p-8 space-y-4">
         <motion.h1
           initial={{ opacity: 0 }}
@@ -60,7 +60,7 @@ const TermsConditions = () => {
             transition={{ duration: 0.5 }}
           >
             Permission is granted to temporarily download one copy of the
-            materials on Subadha&apos;s Website for personal, non-commercial
+            materials on Subadha's Website for personal, non-commercial
             transitory viewing only. This is the grant of a license, not a
             transfer of title, and under this license you may not:
           </motion.p>
@@ -90,8 +90,8 @@ const TermsConditions = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
             >
-              attempt to reverse engineer any software contained on
-              Subadha&apos;s Website;
+              attempt to reverse engineer any software contained on Subadha's
+              Website;
             </motion.li>
             <motion.li
               initial={{ opacity: 0 }}
@@ -138,12 +138,12 @@ const TermsConditions = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            All the materials on Subadha&apos;s Website are provided "as is".
-            Subadha makes no warranties, may it be expressed or implied,
-            therefore negates all other warranties. Furthermore, Subadha does
-            not make any representations concerning the accuracy or reliability
-            of the use of the materials on its Website or otherwise relating to
-            such materials or any sites linked to this Website.
+            All the materials on Subadha's Website are provided "as is". Subadha
+            makes no warranties, may it be expressed or implied, therefore
+            negates all other warranties. Furthermore, Subadha does not make any
+            representations concerning the accuracy or reliability of the use of
+            the materials on its Website or otherwise relating to such materials
+            or any sites linked to this Website.
           </motion.p>
         </section>
 
@@ -163,7 +163,7 @@ const TermsConditions = () => {
           >
             Subadha or its suppliers will not be hold accountable for any
             damages that will arise with the use or inability to use the
-            materials on Subadha&apos;s Website, even if Subadha or an authorize
+            materials on Subadha's Website, even if Subadha or an authorize
             representative of this Website has been notified, orally or written,
             of the possibility of such damage. Some jurisdiction does not allow
             limitations on implied warranties or limitations of liability for
@@ -185,12 +185,12 @@ const TermsConditions = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            The materials appearing on Subadha&apos;s Website may include
-            technical, typographical, or photographic errors. Subadha will not
-            promise that any of the materials in this Website are accurate,
-            complete, or current. Subadha may change the materials contained on
-            its Website at any time without notice. Subadha does not make any
-            commitment to update the materials.
+            The materials appearing on Subadha's Website may include technical,
+            typographical, or photographic errors. Subadha will not promise that
+            any of the materials in this Website are accurate, complete, or
+            current. Subadha may change the materials contained on its Website
+            at any time without notice. Subadha does not make any commitment to
+            update the materials.
           </motion.p>
         </section>
 
@@ -211,7 +211,7 @@ const TermsConditions = () => {
             Subadha has not reviewed all of the sites linked to its Website and
             is not responsible for the contents of any such linked site. The
             presence of any link does not imply endorsement by Subadha of the
-            site. The use of any linked website is at the user&apos;s own risk.
+            site. The use of any linked website is at the user's own risk.
           </motion.p>
         </section>
 
@@ -267,8 +267,8 @@ const TermsConditions = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            Any claim related to Subadha&apos;s Website shall be governed by the
-            laws without regards to its conflict of law provisions.
+            Any claim related to Subadha's Website shall be governed by the laws
+            without regards to its conflict of law provisions.
           </motion.p>
         </section>
       </div>
