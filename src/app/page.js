@@ -44,7 +44,6 @@ export default function Home() {
         {isLoading && <Preloader />}
       </AnimatePresence>
       <Header />
-      {/* <Description />  */}
       <Project />
       <Services/>
       <Testimonial />
@@ -52,7 +51,6 @@ export default function Home() {
       <Timeline/>
       <Team/>
       <ContactUs/>
-      {/* <Clientform/> */}
       <Faq/>
     </>
   );

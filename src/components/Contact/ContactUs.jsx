@@ -1,4 +1,5 @@
 // ContactUs.jsx
+"use client";
 import { motion } from "framer-motion";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
