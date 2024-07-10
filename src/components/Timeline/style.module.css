@@ -25,7 +25,7 @@
 
 }
 
-.card:nth-child(odd) {
+.card:nth-child(even) {
     align-self: flex-end;
 }
 
@@ -35,3 +35,4 @@
 .cardheading{
     font-size: 40px;
 }
+

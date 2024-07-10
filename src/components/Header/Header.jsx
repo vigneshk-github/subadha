@@ -8,41 +8,6 @@ import { useGSAP } from "@gsap/react";
 import { motion } from "framer-motion";
 
 export default function Header() {
-  const transition = { duration: 2, type: "spring" };
-  const firstText = useRef(null);
-  const secondText = useRef(null);
-  const thirdText = useRef(null);
-  const slider = useRef(null);
-  let xPercent = 0;
-  let direction = -1;
-
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.to(slider.current, {
-      scrollTrigger: {
-        trigger: document.documentElement,
-        scrub: 0.5,
-        start: 0,
-        end: window.innerHeight,
-        onUpdate: (e) => (direction = e.direction * -1),
-      },
-      x: "-300px",
-    });
-    requestAnimationFrame(animate);
-  }, []);
-
-  const animate = () => {
-    if (xPercent < -100) {
-      xPercent = 0;
-    } else if (xPercent > 0) {
-      xPercent = -100;
-    }
-    gsap.set(firstText.current, { xPercent: xPercent });
-    gsap.set(secondText.current, { xPercent: xPercent });
-    gsap.set(thirdText.current, { xPercent: xPercent });
-    requestAnimationFrame(animate);
-    xPercent += 0.5 * direction;
-  };
 
   useGSAP(() => {
     gsap.fromTo(
@@ -71,14 +36,14 @@ export default function Header() {
           opacity: 1,
           y: 0,
           transition: {
-            duration: 2,
+            duration: 1,
           },
         }}
         viewport={{ once: true }}
       >
-        <div data-scroll data-scroll-speed="0.3" className={styles.header}>
+        <div  className={styles.header}>
           <div className={styles.container}>
-            <h1 className={styles.intro}>We Build Websites For</h1>
+            <h1 className={styles.intro}>We Build Websites</h1>
             <h1 className={styles.intro}>For Your Brands</h1>
             <a href="https://calendly.com/subadha-co-in/subadha">
               <button
@@ -103,7 +68,7 @@ export default function Header() {
             ></script>
             <div className="flex flex-col md:flex-row mt-8 w-full">
               <div className="flex-1 mb-4 md:mb-0 ">
-                <p className="px-50 mr-50 text-2xl pl-10">
+                <p className="px-50 mr-50 text-2xl pl-10 font-normal">
                   Explore our diverse portfolio of innovative web designs and
                   successful projects.Each piece reflects our commitment to
                   quality, creativity, and client satisfaction.
@@ -124,14 +89,6 @@ export default function Header() {
             </div>
           </div>
         </div>
-
-        {/* <div className={styles.sliderContainer}>
-          <div ref={slider} className={styles.slider}>
-            <p ref={firstText}>Subadha SERVICES FOR YOU -</p>
-            <p ref={secondText}>Subadha SERVICES FOR YOU -</p>
-            <p ref={thirdText}>Subadha SERVICES FOR YOU -</p>
-          </div>
-        </div> */}
       </motion.div>
     </div>
   );

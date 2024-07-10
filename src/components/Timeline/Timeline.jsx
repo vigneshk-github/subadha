@@ -27,10 +27,11 @@ export default function Timeline() {
 
   return (
     <>
-      <h1 className="text-white text-5xl font-bold flex items-center justify-center my-20">
+      <h1 className="text-white text-5xl font-bold text-center my-20">
         Our Proven Process for Website Results
       </h1>
-      <p className="text-white text-lg leading-relaxed max-w-2xl mx-auto mb-10">
+
+      <p className="text-white flex justify-center items-center text-lg max-w-2xl mx-auto mb-10">
         Discover our detailed process for presenting innovative designs and
         successful solutions. Every project showcases our dedication to
         creativity, functionality, and client satisfaction.

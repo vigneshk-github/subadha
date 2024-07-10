@@ -1,7 +1,7 @@
 .main {
     position: relative;
     display: flex;
-    height: 134vh;
+    min-height: 134vh;
     margin-left: 60px;
     margin-bottom: -35vh;
     overflow: hidden;
@@ -11,40 +11,7 @@
     object-fit: cover;
 }
 
-.sliderContainer {
-    position: absolute;
-    top: 500px;
-}
-
-.slider {
-    position: relative;
-    white-space: nowrap;
-    text-transform: uppercase;
-}
-
-.slider p {
-    position: relative;
-    margin: 0px;
-    color: white;
-    font-size: 60px;
-    font-weight: 700;
-    padding-right: 50px;
-}
-
-.slider p:nth-of-type(2) {
-    position: absolute;
-    left: 100%;
-    top: 0;
-}
-
-.slider p:nth-of-type(3) {
-    position: absolute;
-    left: 100%;
-    top: 0;
-}
-
-
-.header{
+.header {
     display: flex;
     flex-direction: column;
     padding-top: 170px;
@@ -53,13 +20,11 @@
     font-weight: 700;
 }
 
-.description{
+.description {
     font-size: 20px;
-    
-    
 }
 
-.intro{
+.intro {
     color: white;
     margin-left: 40px;
     font-size: 80px;
@@ -67,30 +32,47 @@
 
 .responsiveImage {
     max-width: 100%;
-    /* Ensures the image doesn't exceed its container */
     height: auto;
-    /* Allows the image to maintain its aspect ratio */
 }
 
 @media (max-width: 768px) {
+    .header {
+        font-size: 30px;
+        /* Reduce font size for header */
+    }
+
+    .description {
+        font-size: 18px;
+        /* Reduce font size for description */
+    }
+
+    .intro {
+        font-size: 60px;
+        /* Reduce font size for intro */
+    }
+
     .responsiveImage {
         max-width: 80%;
-        /* Adjust width for smaller screens */
     }
 }
 
 @media (max-width: 480px) {
+    .header {
+        font-size: 25px;
+        /* Further reduce font size for header */
+    }
+
+    .description {
+        font-size: 16px;
+        /* Further reduce font size for description */
+    }
+
+    .intro {
+        font-size: 40px;
+        /* Further reduce font size for intro */
+    }
+
     .responsiveImage {
         max-width: 60%;
-        /* Further adjust width for very small screens */
     }
-}
-
-.screen {
-    margin: 0 auto;
-    width: 150px;
-    height: 300px;
-
-    background: rgb(193, 193, 193);
-    background: radial-gradient(circle at 90% 5%, rgba(123, 123, 123, 1) 0%, rgba(50, 50, 50, 1) 26%, rgba(0, 0, 0, 1) 52%);
 }

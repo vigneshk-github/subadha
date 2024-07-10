@@ -52,7 +52,7 @@ function Clientform() {
         <h2 className="text-7xl font-bold text-center mb-8 text-white">
           Client Request
         </h2>
-        <div className="max-w-md md:max-w-xl mx-auto">
+        <div className="max-w-lg md:max-w-4xl mx-auto">
           <form
             ref={form}
             onSubmit={sendEmail}

@@ -7,23 +7,32 @@ import XIcon from "@mui/icons-material/X";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import EmailIcon from "@mui/icons-material/Email";
 
-export default function Footer(){
+export default function Footer() {
   return (
     <>
-      <footer className="text-white font-bold footer bg-base-200 p-10">
+      <footer
+        className={`text-white text-lg font-bold footer bg-base-200 p-10 ${style.footer}`}
+      >
+        <nav>
+          <h6 className="footer-title">Design</h6>
+          <Link href="/">Brand Identity</Link>
+          <Link href="/">Web Design</Link>
+          <Link href="/">Marketing</Link>
+        </nav>
         <nav>
           <h6 className="footer-title">Company</h6>
-          <Link className="link link-hover" href="#about">About us</Link>
-          <Link className="link link-hover" href="#contactus">Contact</Link>
+          <Link href="#team">About us</Link>
+          <Link href="#contactus">Contact</Link>
         </nav>
         <nav>
-          <h6 className="footer-title">Legal</h6>
-          <a className="link link-hover">Terms of use</a>
-          <a className="link link-hover">Privacy policy</a>
-          {/* <a className="link link-hover">Cookie policy</a> */}
+          <h6 className="no-underline footer-title">Legal</h6>
+          <Link href="/">Terms of use</Link>
+          <Link href="/">Privacy policy</Link>
         </nav>
       </footer>
-      <footer className="footer bg-base-200 text-base-content border-base-300 border-t px-10 py-4">
+      <footer
+        className={`footer bg-base-200 text-base-content border-base-300 border-t px-10 py-4 ${style.footerBottom}`}
+      >
         <aside className="grid-flow-col items-center">
           <svg
             width="24"
@@ -42,7 +51,7 @@ export default function Footer(){
           </p>
         </aside>
         <nav className="md:place-self-center md:justify-self-end">
-          <div className="grid grid-flow-col gap-4">
+          <div className={`grid grid-flow-col gap-4 ${style.socialLinks}`}>
             <span>
               <Link
                 href="mailto:subadha.co.in@gmail.com"
@@ -94,6 +103,3 @@ export default function Footer(){
     </>
   );
 }
-{/* <Link href="mailto:subadha.co.in@gmail.com">
-  // subadha.co.in@gmail.com //{" "}
-</Link>; */}
