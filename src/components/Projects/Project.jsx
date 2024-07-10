@@ -2,6 +2,8 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 
+
+
 const Project = () => {
   return (
     <div id="projects">
@@ -21,8 +23,8 @@ const HorizontalScrollCarousel = () => {
   return (
     <section ref={targetRef} className="relative h-[300vh]">
       <div className="flex-col sticky top-0 flex h-screen items-center overflow-hidden">
-        <div className="flex py-[-200px] pb-[-50px] items-center justify-center">
-          <span className="font-semibold mb-20 text-white text-5xl">
+        <div className="flex py-[-1000px] pb-[-50px] items-center justify-center">
+          <span className="font-semibold mb-20 text-white text-7xl">
             Projects
           </span>
         </div>
@@ -40,7 +42,7 @@ const Card = ({ card }) => {
   return (
     <div
       key={card.id}
-      className="group relative h-[350px] w-[720px] overflow-hidden"
+      className="group relative h-[465px] w-[930px] overflow-hidden"
     >
       <a href={card.link} target="_blank">
         <div

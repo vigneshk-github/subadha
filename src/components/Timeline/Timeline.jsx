@@ -23,14 +23,6 @@ export default function Timeline() {
       heading: "Review and Response",
       para: "Our designers and developers collaborate to bring the mock-up to life, focusing on creating a responsive, aesthetically pleasing, and functional website that meets your specifications.",
     },
-    {
-      heading: "Any other queries?",
-      para: "Once the initial design and development phase is complete, we present the website to you for review. We gather your feedback and make any necessary adjustments to ensure the final product aligns with your expectations.",
-    },
-    {
-      heading: "Schedule a consultation",
-      para: "Schedule a consultation with our expert team to kickstart your project. Let's collaborate to craft a detailed and stunning solution tailored just for you.",
-    },
   ];
 
   return (
@@ -64,7 +56,7 @@ function Card({ heading, para, index }) {
         opacity: 1,
         x: 0,
         transition: {
-          duration: 2,
+          duration: 1,
         },
       }}
       viewport={{ once: true }}

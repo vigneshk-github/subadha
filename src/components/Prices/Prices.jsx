@@ -2,13 +2,7 @@
 import { motion } from "framer-motion";
 export default function Prices() {
   return (
-    <section className="mt-[-200px]">
-      <h1
-        id="price"
-        className="flex items-center justify-center text-6xl font-bold text-white my-5"
-      >
-        Prices
-      </h1>
+    <section className="mt-[-00px]">
       <motion.div
         initial={{
           opacity: 0,
@@ -18,12 +12,18 @@ export default function Prices() {
           opacity: 1,
           y: 0,
           transition: {
-            duration: 2,
+            duration: 1,
           },
         }}
         viewport={{ once: true }}
       >
         <div className="py-4 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+          <h1
+            id="price"
+            className="flex items-center justify-center text-7xl font-bold text-white py-10"
+          >
+            Prices
+          </h1>
           <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
               Designed for business teams like yours
@@ -44,7 +44,6 @@ export default function Prices() {
                 <span className="mr-2 text-3xl font-extrabold">
                   ₹80,000 ($958)
                 </span>
-                <span className="text-gray-500 dark:text-gray-400">/month</span>
               </div>
               <button
                 type="button"
@@ -126,7 +125,7 @@ export default function Prices() {
               </p>
               <div className="flex justify-center items-baseline my-8">
                 <span className="mr-2 text-2xl font-extrabold">
-                  ₹2,50,000 ($2,994) /month
+                  ₹2,50,000 ($2,994)
                 </span>
               </div>
               <button

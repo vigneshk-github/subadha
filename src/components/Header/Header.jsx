@@ -11,6 +11,7 @@ export default function Header() {
   const transition = { duration: 2, type: "spring" };
   const firstText = useRef(null);
   const secondText = useRef(null);
+  const thirdText = useRef(null);
   const slider = useRef(null);
   let xPercent = 0;
   let direction = -1;
@@ -38,6 +39,7 @@ export default function Header() {
     }
     gsap.set(firstText.current, { xPercent: xPercent });
     gsap.set(secondText.current, { xPercent: xPercent });
+    gsap.set(thirdText.current, { xPercent: xPercent });
     requestAnimationFrame(animate);
     xPercent += 0.5 * direction;
   };
@@ -46,10 +48,10 @@ export default function Header() {
     gsap.fromTo(
       "#img",
       {
-        x: 20,
+        x: 100,
       },
       {
-        x: 500,
+        x: 300,
         repeat: -1,
         yoyo: true,
         duration: 4,
@@ -81,7 +83,7 @@ export default function Header() {
             <a href="https://calendly.com/subadha-co-in/subadha">
               <button
                 type="button"
-                className="ml-10 bg-slate-400 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
+                className="ml-10 bg-slate-400 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-2xl px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
               >
                 Book a Call
               </button>
@@ -89,7 +91,7 @@ export default function Header() {
             <a href="#projects">
               <button
                 type="button"
-                className="ml-10 bg-slate-400 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
+                className="ml-10 bg-slate-400 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-2xl px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
               >
                 Projects
               </button>
@@ -100,8 +102,8 @@ export default function Header() {
               async
             ></script>
             <div className="flex flex-col md:flex-row mt-8 w-full">
-              <div className="flex-1 mb-4 md:mb-0 md:mr-4">
-                <p className="px-50 pr-50 text-lg pl-10">
+              <div className="flex-1 mb-4 md:mb-0 ">
+                <p className="px-50 mr-50 text-2xl pl-10">
                   Explore our diverse portfolio of innovative web designs and
                   successful projects.Each piece reflects our commitment to
                   quality, creativity, and client satisfaction.
@@ -109,26 +111,27 @@ export default function Header() {
               </div>
               <div
                 id="img"
-                className="flex-2 justify-end -mt-10 md:-mt-32 top-20 right-10"
+                className="flex-1 justify-end -mt-10 md:-mt-32 top-40 right-20"
               >
                 <Image
                   src="/images/emoji1.png"
                   height={400}
                   width={400}
                   alt="Logo"
-                  className={styles.responsiveImage} // Add a class for styling
+                  className={styles.responsiveImage}  
                 />
               </div>
             </div>
           </div>
         </div>
 
-        <div className={styles.sliderContainer}>
+        {/* <div className={styles.sliderContainer}>
           <div ref={slider} className={styles.slider}>
             <p ref={firstText}>Subadha SERVICES FOR YOU -</p>
             <p ref={secondText}>Subadha SERVICES FOR YOU -</p>
+            <p ref={thirdText}>Subadha SERVICES FOR YOU -</p>
           </div>
-        </div>
+        </div> */}
       </motion.div>
     </div>
   );

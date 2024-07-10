@@ -47,9 +47,9 @@ export default function Home() {
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet"
       ></link>
-      <AnimatePresence mode="wait">
+      {/* <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
-      </AnimatePresence>
+      </AnimatePresence> */}
       <Header />
       <Project />
       <Services />
@@ -57,7 +57,7 @@ export default function Home() {
       <Prices />
       <Timeline />
       <Team />
-      <ContactUs />
+      <Clientform/>
       <Faq />
     </>
   );
