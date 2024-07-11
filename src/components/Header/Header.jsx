@@ -44,11 +44,11 @@ export default function Header() {
           <div className={styles.container}>
             <h1 className={styles.intro}>We Build Websites</h1>
             <h1 className={styles.intro}>For Your Brands</h1>
-            <div className="but"> 
+            <div className="but">
               <a href="https://calendly.com/subadha-co-in/subadha">
                 <button
                   type="button"
-                  className="ml-10 bg-slate-400 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg sm:text-2xl px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
+                  className="sm:ml-10 mt-6 -ml-4 bg-slate-400 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-xl  px-2 py-2 sm:px-5 sm:py-2.5 text-center sm:me-2 sm:mb-2 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
                 >
                   Book a Call
                 </button>
@@ -56,7 +56,7 @@ export default function Header() {
               <a href="#projects">
                 <button
                   type="button"
-                  className="ml-10 bg-slate-400 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-2xl px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
+                  className="ml-10 bg-slate-400 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-xl px-2 py-2 sm:px-5 sm:py-2.5 text-center sm:me-2 sm:mb-2 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
                 >
                   Projects
                 </button>
