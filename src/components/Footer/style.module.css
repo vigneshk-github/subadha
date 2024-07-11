@@ -12,11 +12,11 @@
 
 .socialLinks {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-end;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 304px) {
     .footer {
         display: flex;
         flex-direction: column;
@@ -39,10 +39,4 @@
         margin-top: 1rem;
     }
 
-    .socialLinks {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 100%;
-    }
 }
