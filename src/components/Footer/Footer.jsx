@@ -14,15 +14,19 @@ export default function Footer() {
         className={`text-white text-lg font-bold footer bg-base-200 p-10 ${style.footer}`}
       >
         <nav>
+          <h6 className="footer-title">Company</h6>
+          <a className="hover:underline" href="#team">
+            About us
+          </a>
+          <a className="hover:underline" href="#contactus">
+            Contact Us
+          </a>
+        </nav>
+        <nav>
           <h6 className="footer-title">Design</h6>
           <Link href="/">Brand Identity</Link>
           <Link href="/">Web Design</Link>
           <Link href="/">Marketing</Link>
-        </nav>
-        <nav>
-          <h6 className="footer-title">Company</h6>
-          <Link href="#team">About us</Link>
-          <Link href="#contactus">Contact</Link>
         </nav>
         <nav>
           <h6 className="no-underline footer-title">Legal</h6>

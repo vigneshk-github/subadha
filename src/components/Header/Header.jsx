@@ -70,7 +70,7 @@ export default function Header() {
               <div className="flex-1 mb-4 md:mb-0 ">
                 <p className="px-50 mr-50 text-2xl pl-10 font-normal">
                   Explore our diverse portfolio of innovative web designs and
-                  successful projects.Each piece reflects our commitment to
+                  successful projects. Each piece reflects our commitment to
                   quality, creativity, and client satisfaction.
                 </p>
               </div>
