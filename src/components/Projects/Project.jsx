@@ -23,10 +23,15 @@ const HorizontalScrollCarousel = () => {
   return (
     <section ref={targetRef} className="relative h-[300vh]">
       <div className="flex-col sticky top-0 flex h-screen items-center overflow-hidden">
-        <div className="flex py-[-100px] sm:py-[-1000px] pb-[-500px] sm:pb-[-50px] items-center justify-center">
+        <div className="py-4 px-4 mx-auto max-w-screen-md sm:py-4 sm:px-4 flex flex-col sm:pb-[-10px] items-center justify-center">
           <span className="font-semibold mb-20 text-white text-7xl">
             Projects
           </span>
+          <p className="mb-5 font-normal text-white sm:text-2xl dark:text-white">
+            Explore our diverse portfolio showcasing innovative web solutions
+            across various industries, each tailored to meet unique client
+            needs.
+          </p>
         </div>
         <motion.div style={{ x }} className="flex gap-10">
           {cards.map((card) => {
@@ -42,7 +47,7 @@ const Card = ({ card }) => {
   return (
     <div
       key={card.id}
-      className="group relative h-[300px] w-[530px] sm:h-[465px] sm:w-[930px] overflow-hidden"
+      className="group relative h-[300px] w-[530px] sm:h-[365px] sm:w-[730px] overflow-hidden"
     >
       <a href={card.link} target="_blank">
         <div

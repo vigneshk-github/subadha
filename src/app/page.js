@@ -52,7 +52,7 @@ export default function Home() {
       </AnimatePresence> */}
       <Header />
       <Project />
-      {/* <Services /> */}
+      <Services />
       {/* <Testimonial /> */}
       <Prices />
       {/* <Timeline /> */}

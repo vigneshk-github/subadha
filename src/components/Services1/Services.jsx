@@ -5,7 +5,7 @@ export default function Services() {
   return (
     <main
       id="service"
-      className="dark:bg-#101010 sm:py-12 px-4 mx-10 sm:px-6 mt-[-220px] sm:mt-[-120px]"
+      className="dark:bg-#101010 py-20 sm:py-12 px-4 mx-10 sm:px-6 mt-[-220px] sm:mt-[-80px]"
     >
       <h1 className="text-7xl text-center text-gray-900 dark:text-white my-12 font-extrabold  sm:text-7xl tracking-tight">
         Services
@@ -31,7 +31,7 @@ export default function Services() {
               href="#"
               className="block w-full p-16 border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 dark:bg-gray-800 dark:border-gray-700"
             >
-              <h5 className="mb-4 text-4xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <h5 className="sm:mb-4 text-2xl sm:text-4xl font-bold tracking-tight text-gray-900 dark:text-white">
                 Web Development
               </h5>
               <p className="font-normal text-xl text-gray-700 dark:text-gray-400">
@@ -62,7 +62,7 @@ export default function Services() {
               href="#"
               className="block w-full p-16 bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 dark:bg-gray-800 dark:border-gray-700"
             >
-              <h5 className="mb-4 text-4xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <h5 className="text-2xl sm:mb-4 sm:text-4xl font-bold tracking-tight text-gray-900 dark:text-white">
                 App Development
               </h5>
               <p className="font-normal text-xl text-gray-700 dark:text-gray-400">
