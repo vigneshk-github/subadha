@@ -52,12 +52,12 @@ export default function Home() {
       </AnimatePresence> */}
       <Header />
       <Project />
-      <Services />
-      <Testimonial />
+      {/* <Services /> */}
+      {/* <Testimonial /> */}
       <Prices />
-      <Timeline />
+      {/* <Timeline /> */}
       <Team />
-      <Clientform/>
+      {/* <Clientform/> */}
       <Faq />
     </>
   );

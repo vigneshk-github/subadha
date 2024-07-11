@@ -69,7 +69,7 @@ export default function Header() {
             ></script>
             <div className="flex flex-col md:flex-row mt-8 w-full">
               <div className="flex-1 mb-4 md:mb-0 ">
-                <p className="flex justify-center items-center pl-4 mr-4 sm:px-50 sm:mr-50 text-2xl sm:pl-10 font-normal">
+                <p className="flex justify-center items-center pl-4 m-4 sm:px-50 sm:mr-50 text-2xl sm:pl-10 font-normal">
                   Explore our diverse portfolio of innovative web designs and
                   successful projects. Each piece reflects our commitment to
                   quality, creativity, and client satisfaction.
