@@ -29,12 +29,12 @@ export default function Services() {
           <div className="flex items-center justify-center">
             <a
               href="#"
-              className="block w-full p-16 border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 dark:bg-gray-800 dark:border-gray-700"
+              className="block w-full p-8 w-100 sm:p-16 border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 dark:bg-gray-800 dark:border-gray-700"
             >
-              <h5 className="sm:mb-4 text-2xl sm:text-4xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <h5 className="sm:mb-4 text-2xl pb-10 sm:text-4xl font-bold tracking-tight text-gray-900 dark:text-white">
                 Web Development
               </h5>
-              <p className="font-normal text-xl text-gray-700 dark:text-gray-400">
+              <p className="flex justify-center items-center font-normal text-xl text-gray-700 dark:text-gray-400">
                 As a team, we specialize in transforming design concepts into
                 fully functional websites, developing premium themes, creating
                 sophisticated animations, and writing custom code to meet
@@ -60,9 +60,9 @@ export default function Services() {
           <div className="flex items-center justify-center">
             <a
               href="#"
-              className="block w-full p-16 bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 dark:bg-gray-800 dark:border-gray-700"
+              className="block w-full p-8 w-100 sm:p-16 border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 dark:bg-gray-800 dark:border-gray-700"
             >
-              <h5 className="text-2xl sm:mb-4 sm:text-4xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <h5 className="text-2xl pb-10 sm:mb-4 sm:text-4xl font-bold tracking-tight text-gray-900 dark:text-white">
                 App Development
               </h5>
               <p className="font-normal text-xl text-gray-700 dark:text-gray-400">
