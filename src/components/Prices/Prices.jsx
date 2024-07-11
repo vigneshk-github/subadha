@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 export default function Prices() {
   return (
-    <section className="mt-[-00px]">
+    <section >
       <motion.div
         initial={{
           opacity: 0,

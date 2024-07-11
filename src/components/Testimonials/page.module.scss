@@ -17,7 +17,7 @@
 
 .testimonialTrack {
     display: flex;
-    width: calc(100% * 4); // Width for twice the number of images
+    width: calc(100% * 1); // Width for twice the number of images
     animation: scroll 20s linear infinite;
 }
 
@@ -37,7 +37,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 360px) {
     .spacer{
         font-size: 59px;
     }
@@ -46,6 +46,9 @@
         width: calc(100% * 3); // Width for twice the number of images
         animation: scroll 5s linear infinite;
     } 
+}
+
+@media (max-width: 768px) {
     .main{
         margin-bottom: -130px;
     }

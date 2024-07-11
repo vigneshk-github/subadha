@@ -71,6 +71,7 @@ function Clientform() {
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
                 rows="3"
                 placeholder="Your Name, Contact Details (optional), and Email Address"
+                required
               ></textarea>
             </div>
 
@@ -87,6 +88,7 @@ function Clientform() {
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
                 rows="2"
                 placeholder="Business Name and Website Link"
+                required
               ></textarea>
             </div>
 
@@ -103,6 +105,7 @@ function Clientform() {
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
                 rows="3"
                 placeholder="About Your Business"
+                required
               ></textarea>
             </div>
 
@@ -119,6 +122,7 @@ function Clientform() {
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
                 rows="2"
                 placeholder="Who is your target audience & Industry?"
+                required
               ></textarea>
             </div>
 
@@ -135,6 +139,7 @@ function Clientform() {
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
                 rows="3"
                 placeholder="What are your main goals for your new website?"
+                required
               ></textarea>
             </div>
 
@@ -151,6 +156,7 @@ function Clientform() {
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
                 rows="3"
                 placeholder="Competitors' Website Links"
+                required
               ></textarea>
             </div>
 
