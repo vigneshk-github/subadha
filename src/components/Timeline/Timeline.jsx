@@ -29,13 +29,12 @@ export default function Timeline() {
     <>
       <h1 className="text-white text-5xl font-bold text-center my-20">
         Our Proven Process for Website Results
+        <p className="text-white pt-12 flex justify-center items-center text-lg max-w-2xl mx-auto mb-10">
+          Discover our detailed process for presenting innovative designs and
+          successful solutions. Every project showcases our dedication to
+          creativity, functionality, and client satisfaction.
+        </p>
       </h1>
-
-      <p className="text-white flex justify-center items-center text-lg max-w-2xl mx-auto mb-10">
-        Discover our detailed process for presenting innovative designs and
-        successful solutions. Every project showcases our dedication to
-        creativity, functionality, and client satisfaction.
-      </p>
       <div className={style.App}>
         {items.map((item, i) => (
           <Card key={i} heading={item.heading} para={item.para} index={i} />

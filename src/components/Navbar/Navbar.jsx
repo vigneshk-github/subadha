@@ -10,7 +10,7 @@ const Navbar = () => {
       <nav
         className={`flex items-center gap-12 mx-4 py-6 px-10 text-2xl font-bold ${style.navLinks}`}
       >
-      <Image src="/images/logo.png" width={100} height={100}/>
+      <Image src="/images/logo.png" width={50} height={50}/>
         <Link href="/" scroll={true} className={style.smoothscroll}>
           Home
         </Link>

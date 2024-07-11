@@ -23,7 +23,7 @@ const HorizontalScrollCarousel = () => {
   return (
     <section ref={targetRef} className="relative h-[300vh]">
       <div className="flex-col sticky top-0 flex h-screen items-center overflow-hidden">
-        <div className="flex py-[-1000px] pb-[-50px] items-center justify-center">
+        <div className="flex py-[-100px] sm:py-[-1000px] pb-[-500px] sm:pb-[-50px] items-center justify-center">
           <span className="font-semibold mb-20 text-white text-7xl">
             Projects
           </span>
@@ -42,7 +42,7 @@ const Card = ({ card }) => {
   return (
     <div
       key={card.id}
-      className="group relative h-[465px] w-[930px] overflow-hidden"
+      className="group relative h-[300px] w-[530px] sm:h-[465px] sm:w-[930px] overflow-hidden"
     >
       <a href={card.link} target="_blank">
         <div

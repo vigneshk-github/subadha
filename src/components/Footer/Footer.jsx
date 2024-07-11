@@ -23,7 +23,7 @@ export default function Footer() {
           </a>
         </nav>
         <nav>
-          <h6 className="footer-title">Design</h6>
+          <h6 className="footer-title pt-10">Design</h6>
           <Link href="/">Brand Identity</Link>
           <Link href="/">Web Design</Link>
           <Link href="/">Marketing</Link>

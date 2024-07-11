@@ -36,43 +36,60 @@
 }
 
 @media (max-width: 768px) {
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: -5px;
+        margin-bottom: 100px;
+        margin-right: 10px;
+        margin-top: -50px;
+    }
     .header {
-        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
         /* Reduce font size for header */
     }
 
     .description {
-        font-size: 18px;
-        /* Reduce font size for description */
+        font-size: 1px;
+        margin-bottom: 100px;
+    }
+
+    .container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container button{
+        margin-right: 30px;
+    }
+
+    .but a button {
+        margin-left: 10px;
+    }
+
+    .but{
+        display: flex;
+        flex-direction: row;
+        color: aqua;
+        padding: 100px;
+        width: 10px;
     }
 
     .intro {
-        font-size: 60px;
-        /* Reduce font size for intro */
+        font-size: 70px;
+        display: flex;
     }
+
 
     .responsiveImage {
-        max-width: 80%;
-    }
-}
-
-@media (max-width: 480px) {
-    .header {
-        font-size: 25px;
-        /* Further reduce font size for header */
+        max-width: 0%;
     }
 
-    .description {
-        font-size: 16px;
-        /* Further reduce font size for description */
-    }
-
-    .intro {
-        font-size: 40px;
-        /* Further reduce font size for intro */
-    }
-
-    .responsiveImage {
-        max-width: 60%;
-    }
 }

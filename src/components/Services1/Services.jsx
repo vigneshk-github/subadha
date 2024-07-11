@@ -5,9 +5,9 @@ export default function Services() {
   return (
     <main
       id="service"
-      className="dark:bg-#101010 py-12 px-4 sm:px-6 lg:px-8 mt-[-120px]"
+      className="dark:bg-#101010 sm:py-12 px-4 mx-10 sm:px-6 mt-[-220px] sm:mt-[-120px]"
     >
-      <h1 className="text-center text-gray-900 dark:text-white my-12 font-extrabold  lg:text-7xl tracking-tight">
+      <h1 className="text-7xl text-center text-gray-900 dark:text-white my-12 font-extrabold  sm:text-7xl tracking-tight">
         Services
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mx-auto max-w-8xl">
@@ -20,7 +20,7 @@ export default function Services() {
             opacity: 1,
             y: 0,
             transition: {
-              duration: 2,
+              duration: 1,
             },
           }}
           viewport={{ once: true }}
@@ -52,7 +52,7 @@ export default function Services() {
             opacity: 1,
             y: 0,
             transition: {
-              duration: 2,
+              duration: 1,
             },
           }}
           viewport={{ once: true }}
