@@ -2,8 +2,6 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 
-
-
 const Project = () => {
   return (
     <div id="projects">
@@ -27,7 +25,7 @@ const HorizontalScrollCarousel = () => {
           <span className="font-semibold mb-20 text-white text-6xl sm:text-7xl">
             Projects
           </span>
-          <p className="mb-5 font-normal text-white sm:text-2xl dark:text-white">
+          <p className="mb-5 font-normal text-white text-2xl sm:text-2xl dark:text-white">
             Explore our diverse portfolio showcasing innovative web solutions
             across various industries, each tailored to meet unique client
             needs.
