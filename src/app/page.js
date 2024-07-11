@@ -53,11 +53,11 @@ export default function Home() {
       <Header />
       <Project />
       <Services />
-      {/* <Testimonial /> */}
+      <Testimonial />
       <Prices />
       {/* <Timeline /> */}
       <Team />
-      {/* <Clientform/> */}
+      <Clientform/>
       <Faq />
     </>
   );
