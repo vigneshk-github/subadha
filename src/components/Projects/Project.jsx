@@ -21,7 +21,7 @@ const HorizontalScrollCarousel = () => {
   return (
     <section ref={targetRef} className="relative h-[300vh]">
       <div className="flex-col sticky top-0 flex h-screen items-center overflow-hidden">
-        <div className="py-4 px-4 mx-auto max-w-screen-md sm:py-4 sm:px-4 flex flex-col sm:pb-[-10px] items-center justify-center">
+        <div className=" px-4 mx-auto max-w-screen-md sm:py-4 sm:px-4 flex flex-col sm:pb-[-10px] items-center justify-center">
           <span className="font-semibold mb-20 text-white text-6xl sm:text-7xl">
             Projects
           </span>
