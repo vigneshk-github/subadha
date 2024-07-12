@@ -1,35 +1,86 @@
+"use client"
 import Link from "next/link";
-import React from "react";
-import style from "./style.module.css"; 
+import React, { useState } from "react";
+import styles from "./style.module.css"; // Import CSS module
 import Image from "next/image";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
-    <header className={style.navbar}>
-      <div className={style.navbarBackground}></div>
-      <nav
-        className={`flex items-center gap-12 mx-4 py-6 px-10 text-2xl font-bold ${style.navLinks}`}
-      >
-      <Image src="/images/logo1.jpg" width={100} height={100}/>
-        <Link href="/" scroll={true} className={style.smoothscroll}>
-          Home
-        </Link>
-        <Link href="#projects" scroll={true} className={style.smoothscroll}>
-          Projects
-        </Link>
-        <Link href="#service" scroll={true} className={style.smoothscroll}>
-          Services
-        </Link>
-        <Link href="#testimonial" scroll={true} className={style.smoothscroll}>
-          Testimonials
-        </Link>
-        <Link href="#contactus" scroll={true} className={style.smoothscroll}>
-          Contact Us
-        </Link>
+    <header className={styles.navbar}>
+      <div className={styles.navbarBackground}></div>
+      <nav className={styles.navLinks}>
+        <div className={styles.logoContainer}>
+          <Image
+            src="/images/logo1.jpg"
+            alt="Logo"
+            className={styles.logo}
+            width={50}
+            height={50}
+          />
+        </div>
+        <div
+          className={`${styles.menuIcon} ${menuOpen ? styles.open : ""}`}
+          onClick={toggleMenu}
+        >
+          <div className={styles.burger}></div>
+          <div className={styles.burger}></div>
+          <div className={styles.burger}></div>
+        </div>
+        <div className={`${styles.links} ${menuOpen ? styles.show : ""}`}>
+          <Link
+            href="/"
+            scroll={true}
+            className={styles.smoothscroll}
+            onClick={closeMenu}
+          >
+            Home
+          </Link>
+          <Link
+            href="#projects"
+            scroll={true}
+            className={styles.smoothscroll}
+            onClick={closeMenu}
+          >
+            Projects
+          </Link>
+          <Link
+            href="#service"
+            scroll={true}
+            className={styles.smoothscroll}
+            onClick={closeMenu}
+          >
+            Services
+          </Link>
+          <Link
+            href="#testimonial"
+            scroll={true}
+            className={styles.smoothscroll}
+            onClick={closeMenu}
+          >
+            Testimonials
+          </Link>
+          <Link
+            href="#contactus"
+            scroll={true}
+            className={styles.smoothscroll}
+            onClick={closeMenu}
+          >
+            Contact Us
+          </Link>
+        </div>
       </nav>
     </header>
   );
 };
 
 export default Navbar;
-  

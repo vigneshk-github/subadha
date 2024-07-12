@@ -50,7 +50,7 @@ export default function Header() {
                   type="button"
                   className="sm:ml-10 mt-6 -ml-4 bg-slate-400 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-xl  px-2 py-2 sm:px-5 sm:py-2.5 text-center sm:me-2 sm:mb-2 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
                 >
-                  Book a Call
+                  Book a free Call
                 </button>
               </a>
               <a href="#projects">
