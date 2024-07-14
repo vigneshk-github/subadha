@@ -16,16 +16,16 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["38%", "-38%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["36%", "-38%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh]">
+    <section ref={targetRef} className="text-black bg-white dark:bg-black dark:text-white  relative h-[300vh]">
       <div className="flex-col sticky top-0 flex h-screen items-center overflow-hidden">
         <div className=" px-4 mx-auto max-w-screen-md sm:py-4 sm:px-4 flex flex-col sm:pb-[-10px] items-center justify-center">
-          <span className="font-semibold mb-20 text-white text-6xl sm:text-7xl">
+          <span className="font-semibold mb-20 text-6xl sm:text-7xl">
             Projects
           </span>
-          <p className="mb-5 font-normal text-white text-2xl sm:text-2xl dark:text-white">
+          <p className="mb-5 px-4 py-4 font-normal text-2xl sm:text-2xl">
             Explore our diverse portfolio showcasing innovative web solutions
             across various industries, each tailored to meet unique client
             needs.

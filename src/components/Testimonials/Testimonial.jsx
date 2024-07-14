@@ -21,7 +21,7 @@ const images = [
 
 export default function Testimonial() {
   return (
-    <main id="testimonial" className={styles.main}>
+    <main id="testimonial" className={`dark:bg-black dark:text-white text-black bg-white ${styles.main}`}>
       <div className={styles.spacer}>Testimonial</div>
       <div className={styles.testimonialContainer}>
         <div className={styles.testimonialTrack}>

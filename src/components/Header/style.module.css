@@ -1,9 +1,7 @@
 .main {
     position: relative;
     display: flex;
-    min-height: 134vh;
-    margin-left: 60px;
-    margin-bottom: -35vh;
+    padding-bottom: 30px;
     overflow: hidden;
 }
 
@@ -25,9 +23,12 @@
 }
 
 .intro {
-    color: white;
     margin-left: 40px;
     font-size: 80px;
+}
+
+.but>*{
+    margin-left: 100px;
 }
 
 .responsiveImage {

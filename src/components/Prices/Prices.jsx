@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 export default function Prices() {
   return (
-    <section >
+    <section className="dark:bg-black dark:text-white text-black bg-white">
       <motion.div
         initial={{
           opacity: 0,
@@ -20,22 +20,22 @@ export default function Prices() {
         <div className="py-4  px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <h1
             id="price"
-            className="flex items-center justify-center text-7xl font-bold text-white py-10"
+            className="flex items-center justify-center text-7xl font-bold py-10"
           >
             Prices
           </h1>
           <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+            <h2 className="mb-4 text-4xl tracking-tight font-extrabold">
               Designed for business teams like yours
             </h2>
-            <p className="mb-5 font-normal text-white sm:text-xl dark:text-white">
+            <p className="mb-5 font-normal sm:text-xl">
               Here at Subadha, we specialize in markets where technology
               innovation and capital can unlock long-term value, driving
               economic growth.
             </p>
           </div>
           <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
-            <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+            <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-white bg-black rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
               <h3 className="mb-4 text-2xl font-semibold">Launch Plan</h3>
               <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
                 Top pick for personal use and future endeavors.
@@ -120,7 +120,7 @@ export default function Prices() {
                 className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900"
               ></a>
             </div>
-            <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+            <div className="flex flex-col p-6 mx-auto max-w-lg text-center bg-black text-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
               <h3 className="mb-4 text-2xl font-semibold">Elite Package</h3>
               <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
                 Designed for Multiple Users with Extended Premium Support.
@@ -220,7 +220,7 @@ export default function Prices() {
                 className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900"
               ></a>
             </div>
-            <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+            <div className="flex flex-col p-6 mx-auto max-w-lg text-center bg-black text-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
               <h3 className="mb-4 text-2xl font-semibold">Prototype Design</h3>
               <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
                 Ideal for Enterprise Use with Extended Redistribution Rights

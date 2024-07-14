@@ -34,7 +34,7 @@ function Clientform() {
   };
 
   return (
-    <main id="contactus">
+    <main id="contactus" className="bg-white text-black dark:bg-black dark:text-white">
       <motion.div
         initial={{
           opacity: 0,
@@ -49,19 +49,19 @@ function Clientform() {
         }}
         viewport={{ once: true }}
       >
-        <h2 className="text-5xl sm:text-7xl font-bold text-center mb-8 text-white">
+        <h2 className="text-5xl sm:text-7xl font-bold text-center mb-8">
           Still have any questions ?
         </h2>
         <div className="max-w-lg md:max-w-4xl mx-auto">
           <form
             ref={form}
             onSubmit={sendEmail}
-            className="bg-gray-800 shadow-md rounded px-8 pt-16 pb-8 mb-4"
+            className=" shadow-md rounded px-8 pt-16 pb-8 mb-0"
           >
             <div className="mb-4">
               <label
                 htmlFor="name"
-                className="block text-white text-xl font-bold mb-2"
+                className="block text-xl font-bold mb-2"
               >
                 Your Name, Contact Details (optional), and Email Address
               </label>
@@ -78,7 +78,7 @@ function Clientform() {
             <div className="mb-4">
               <label
                 htmlFor="business_name"
-                className="block text-white text-xl font-bold mb-2"
+                className="block text-xl font-bold mb-2"
               >
                 Business Name and Website Link
               </label>
@@ -95,7 +95,7 @@ function Clientform() {
             <div className="mb-4">
               <label
                 htmlFor="about_business"
-                className="block text-white text-xl font-bold mb-2"
+                className="block  text-xl font-bold mb-2"
               >
                 About Your Business
               </label>
@@ -112,7 +112,7 @@ function Clientform() {
             <div className="mb-4">
               <label
                 htmlFor="target_audience"
-                className="block text-white text-xl font-bold mb-2"
+                className="block  text-xl font-bold mb-2"
               >
                 Who is your target audience & Industry?
               </label>
@@ -129,7 +129,7 @@ function Clientform() {
             <div className="mb-4">
               <label
                 htmlFor="goals"
-                className="block text-white text-xl font-bold mb-2"
+                className="block  text-xl font-bold mb-2"
               >
                 What are your main goals for your new website?
               </label>
@@ -146,7 +146,7 @@ function Clientform() {
             <div className="mb-4">
               <label
                 htmlFor="competitors"
-                className="block text-white text-xl font-bold mb-2"
+                className="block  text-xl font-bold mb-2"
               >
                 Competitors Website Links
               </label>
@@ -163,7 +163,7 @@ function Clientform() {
             <div className="mb-4">
               <label
                 htmlFor="website_service"
-                className="block text-white text-xl font-bold mb-2"
+                className="block  text-xl font-bold mb-2"
               >
                 What kind of website service do you want?
               </label>
@@ -187,7 +187,7 @@ function Clientform() {
             <div className="mb-4">
               <label
                 htmlFor="budget"
-                className="block text-white text-xl font-bold mb-2"
+                className="block text-xl font-bold mb-2"
               >
                 What is your estimated budget for this project?
               </label>
@@ -210,7 +210,7 @@ function Clientform() {
             <div className="text-center md:text-left">
               <button
                 type="submit"
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                className=" font-bold py-2 px-4 rounded bg-black text-white dark:bg-white dark:text-black focus:outline-none focus:shadow-outline"
                 disabled={loading}
               >
                 {loading ? "Sending..." : "Send"}

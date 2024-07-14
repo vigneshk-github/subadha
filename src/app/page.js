@@ -1,23 +1,17 @@
+// /pages/index.js or /pages/Home.js
 "use client";
-import { useEffect } from "react";
-import Comp from "../components/Intro/Comp";
-import Description from "@/components/Description/Description";
-import Header from "@/components/Header/Header";
-import Project from "@/components/Projects/Project";
-import Footer from "@/components/Footer/Footer";
-import { useState } from "react";
-import { AnimatePresence } from "framer-motion";
-import Preloader from "../components/Preloader";
-import Testimonial from "@/components/Testimonials/Testimonial";
-import Prices from "@/components/Prices/Prices";
-import Services from "@/components/Services1/Services";
-import ContactUs from "@/components/Contact/ContactUs";
-import Team from "@/components/Team/Team";
-import Timeline from "@/components/Timeline/Timeline";
-import Faq from "@/components/FAQ/Faq";
-import Clientform from "@/components/ClientForm/Clientform";
-export default function Home() {
+import { useEffect, useState } from "react";
+import Header from "../components/Header/Header";
+import Project from "../components/Projects/Project";
+import Services from "../components/Services1/Services";
+import Testimonial from "../components/Testimonials/Testimonial";
+import Prices from "../components/Prices/Prices";
+import Timeline from "../components/Timeline/Timeline";
+import Team from "../components/Team/Team";
+import Clientform from "../components/ClientForm/Clientform";
+import Faq from "../components/FAQ/Faq";
 
+export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -33,8 +27,6 @@ export default function Home() {
     })();
   }, []);
 
-  //Other feature
-
   return (
     <>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -47,17 +39,14 @@ export default function Home() {
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet"
       ></link>
-      {/* <AnimatePresence mode="wait">
-        {isLoading && <Preloader />}
-      </AnimatePresence> */}
       <Header />
       <Project />
       <Services />
       <Testimonial />
       <Prices />
-      {/* <Timeline /> */}
+      <Timeline />
       <Team />
-      <Clientform/>
+      <Clientform />
       <Faq />
     </>
   );

@@ -29,7 +29,7 @@ function Faq() {
   const [activeIndex, setActiveIndex] = useState(null);
 
   return (
-    <section className="py-24">
+    <section className="py-24 dark:bg-black dark:text-white text-black bg-white">
       <motion.div
         initial={{
           opacity: 0,
@@ -46,7 +46,7 @@ function Faq() {
       >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-16">
-            <h2 className="text-3xl sm:text-4xl font-manrope text-center font-bold text-white leading-[3.25rem]">
+            <h2 className="text-3xl sm:text-4xl font-manrope text-center font-bold  leading-[3.25rem]">
               Frequently asked questions
             </h2>
           </div>
@@ -56,16 +56,16 @@ function Faq() {
               <div
                 key={index}
                 className={`accordion py-8 px-6 border-b border-solid border-gray-200 transition-all duration-500 rounded-2xl ${
-                  activeIndex === index ? "bg-black" : ""
+                  activeIndex === index ? " dark:text-white text-white" : ""
                 }`}
                 onMouseEnter={() => setActiveIndex(index)}
                 onMouseLeave={() => setActiveIndex(null)}
               >
                 <div className="accordion-toggle group inline-flex items-center justify-between leading-8 text-white w-full transition duration-500 text-left">
-                  <h3 className="text-2xl">{item.question}</h3>
+                  <h3 className="text-2xl dark:text-white text-black">{item.question}</h3>
                   <svg
                     className={`text-gray-500 transition duration-500 ${
-                      activeIndex === index ? "text-white rotate-180" : ""
+                      activeIndex === index ? "text-white rotate-180 " : ""
                     }`}
                     width="42"
                     height="22"
@@ -88,7 +88,8 @@ function Faq() {
                   style={{ maxHeight: activeIndex === index ? "250px" : "0px" }}
                   aria-labelledby={`accordion-item-${index}`}
                 >
-                  <p className="text-base text-white leading-6">
+                  <p className="text-base text-black leading-6 dark:text-white
+                  ">
                     {item.answer}
                   </p>
                 </div>

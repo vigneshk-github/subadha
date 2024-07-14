@@ -14,12 +14,12 @@ export default function Team() {
         opacity: 1,
         y: 0,
         transition: {
-          duration: 2,
+          duration: 1,
         },
       }}
       viewport={{ once: true }}
     >
-      <div id="team" className="flex flex-col items-center justify-center px-6 py-12 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white my-16">
+      <div id="team" className="flex flex-col items-center justify-center px-6 py-12 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white pb-16">
         <h1 className="text-3xl font-bold mb-4 text-center">
           Meet Our Dedicated Team of Experts
         </h1>
