@@ -7,7 +7,7 @@ export default function Services() {
       id="service"
       className="dark:text-white dark:bg-black text-black bg-white pt-30 mt-20 sm:py-12 px-4 sm:px-6 sm:mt-[-80px]"
     >
-      <h1 className="text-6xl text-center my-12 font-extrabold  sm:text-7xl tracking-tight">
+      <h1 className="text-5xl text-center my-12 font-extrabold  sm:text-7xl tracking-tight">
         Services
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mx-auto max-w-8xl">

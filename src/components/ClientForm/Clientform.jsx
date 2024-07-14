@@ -50,7 +50,7 @@ function Clientform() {
         viewport={{ once: true }}
       >
         <h2 className="text-5xl sm:text-7xl font-bold text-center mb-8">
-          Still have any questions ?
+          Client Request 
         </h2>
         <div className="max-w-lg md:max-w-4xl mx-auto">
           <form
@@ -63,14 +63,14 @@ function Clientform() {
                 htmlFor="name"
                 className="block text-xl font-bold mb-2"
               >
-                Your Name, Contact Details (optional), and Email Address
+                Your Name
               </label>
               <textarea
                 id="contact_details"
                 name="contact_details"
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
                 rows="3"
-                placeholder="Your Name, Contact Details (optional), and Email Address"
+                placeholder="Your Name"
                 required
               ></textarea>
             </div>
@@ -80,14 +80,14 @@ function Clientform() {
                 htmlFor="business_name"
                 className="block text-xl font-bold mb-2"
               >
-                Business Name and Website Link
+                Business Name
               </label>
               <textarea
                 id="business_name"
                 name="business_name"
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
                 rows="2"
-                placeholder="Business Name and Website Link"
+                placeholder="Business Name"
                 required
               ></textarea>
             </div>
@@ -97,14 +97,14 @@ function Clientform() {
                 htmlFor="about_business"
                 className="block  text-xl font-bold mb-2"
               >
-                About Your Business
+                About Your Industry
               </label>
               <textarea
                 id="about_business"
                 name="about_business"
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
                 rows="3"
-                placeholder="About Your Business"
+                placeholder="About Your Industry"
                 required
               ></textarea>
             </div>
@@ -156,7 +156,7 @@ function Clientform() {
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
                 rows="3"
                 placeholder="Competitors' Website Links"
-                required
+                
               ></textarea>
             </div>
 

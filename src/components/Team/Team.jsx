@@ -19,7 +19,10 @@ export default function Team() {
       }}
       viewport={{ once: true }}
     >
-      <div id="team" className="flex flex-col items-center justify-center px-6 py-12 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white pb-16">
+      <div
+        id="team"
+        className="flex flex-col items-center justify-center px-6 py-12 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white pb-16"
+      >
         <h1 className="text-3xl font-bold mb-4 text-center">
           Meet Our Dedicated Team of Experts
         </h1>
@@ -32,7 +35,7 @@ export default function Team() {
           <figure className="relative w-48 h-48 md:w-64 md:h-64 transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 shadow-lg rounded-lg overflow-hidden">
             <a
               target="_blank"
-              href="https://www.linkedin.com/in/kalyan-g-45391b217/"
+              href="https://www.linkedin.com/in/kalyan-gopu-45391b217"
               className="block w-full h-full"
             >
               <Image

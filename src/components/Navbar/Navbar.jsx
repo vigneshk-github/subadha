@@ -24,7 +24,7 @@ const Navbar = () => {
       <nav className={styles.navLinks}>
         <div className={styles.logoContainer}>
           <Image
-            src="/images/logo1.jpg"
+            src="/images/logo.png"
             alt="Logo"
             className={styles.logo}
             width={50}
@@ -40,6 +40,9 @@ const Navbar = () => {
           <div className={styles.burger}></div>
         </div>
         <div className={`${styles.links} ${menuOpen ? styles.show : ""}`}>
+          {menuOpen && <div className={styles.closeButton} onClick={closeMenu}>
+            &times;
+          </div>}
           <Link
             href="/"
             scroll={true}

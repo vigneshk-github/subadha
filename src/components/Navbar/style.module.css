@@ -47,6 +47,7 @@
 .logo {
     width: 100px;
     height: 70px;
+    mix-blend-mode: multiply;
     /* Adjust dimensions as needed */
 }
 
@@ -114,5 +115,10 @@
 
     .open .burger:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -5px);
+    }
+
+    .logo{
+        width: 30px;
+        height: 30px;
     }
 }
