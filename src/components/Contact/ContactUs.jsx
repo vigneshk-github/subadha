@@ -34,7 +34,10 @@ function ContactUs() {
   };
 
   return (
-    <main id="contactus">
+    <main
+      id="contactus"
+      className="dark:text-white dark:bg-black text-black bg-white"
+    >
       <motion.div
         initial={{
           opacity: 0,
@@ -49,10 +52,8 @@ function ContactUs() {
         }}
         viewport={{ once: true }}
       >
-        <h2 className="text-5xl font-bold text-center mb-8 text-white">
-          Contact Us
-        </h2>
-        <div className="container mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-center">
+        <h2 className="text-5xl font-bold text-center mb-8">Contact Us</h2>
+        <div className="container mx-auto sm:px-60 py-10 flex flex-col md:flex-row items-center justify-center">
           <div className="flex flex-col mx-20 max-w-md md:mr-8 mb-8 md:mb-0 text-center md:text-left">
             <h2 className="text-3xl mb-4">Still have any questions?</h2>
             <p className="mb-4">
@@ -68,12 +69,12 @@ function ContactUs() {
             <form
               ref={form}
               onSubmit={sendEmail}
-              className="bg-gray-800 shadow-md rounded px-8 pt-6 pb-8 mb-4"
+              className="bg-black dark:bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
             >
               <div className="mb-4">
                 <label
                   htmlFor="name"
-                  className="block text-white text-sm font-bold mb-2"
+                  className="block text-black text-sm font-bold mb-2"
                 >
                   Name
                 </label>
@@ -83,13 +84,14 @@ function ContactUs() {
                   name="name"
                   className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
                   placeholder="Your Name"
+                  required
                 />
               </div>
 
               <div className="mb-4">
                 <label
                   htmlFor="email"
-                  className="block text-white text-sm font-bold mb-2"
+                  className="block text-black text-sm font-bold mb-2"
                 >
                   Email
                 </label>
@@ -99,13 +101,14 @@ function ContactUs() {
                   name="email"
                   className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
                   placeholder="Your Email"
+                  required
                 />
               </div>
 
               <div className="mb-6">
                 <label
                   htmlFor="message"
-                  className="block text-white text-sm font-bold mb-2"
+                  className="block text-black text-sm font-bold mb-2"
                 >
                   Message
                 </label>
@@ -115,6 +118,7 @@ function ContactUs() {
                   className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
                   rows="5"
                   placeholder="Your Message"
+                  required
                 ></textarea>
               </div>
 

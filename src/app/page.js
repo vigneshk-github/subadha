@@ -10,6 +10,7 @@ import Timeline from "../components/Timeline/Timeline";
 import Team from "../components/Team/Team";
 import Clientform from "../components/ClientForm/Clientform";
 import Faq from "../components/FAQ/Faq";
+import ContactUs from "@/components/Contact/ContactUs";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -46,6 +47,7 @@ export default function Home() {
       <Prices />
       <Timeline />
       <Team />
+      <ContactUs/>
       <Clientform />
       <Faq />
     </>
