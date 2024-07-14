@@ -37,7 +37,7 @@ export default function Prices() {
           <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
             <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-white bg-black rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
               <h3 className="mb-4 text-2xl font-semibold">Launch Plan</h3>
-              <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+              <p className="font-light sm:text-lg ">
                 Top pick for personal use and future endeavors.
               </p>
               <div className="flex justify-center items-baseline my-8">
@@ -122,7 +122,7 @@ export default function Prices() {
             </div>
             <div className="flex flex-col p-6 mx-auto max-w-lg text-center bg-black text-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
               <h3 className="mb-4 text-2xl font-semibold">Elite Package</h3>
-              <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+              <p className="font-lightsm:text-lg ">
                 Designed for Multiple Users with Extended Premium Support.
               </p>
               <div className="flex justify-center items-baseline my-8">
@@ -222,7 +222,7 @@ export default function Prices() {
             </div>
             <div className="flex flex-col p-6 mx-auto max-w-lg text-center bg-black text-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
               <h3 className="mb-4 text-2xl font-semibold">Prototype Design</h3>
-              <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+              <p className="font-light sm:text-lg ">
                 Ideal for Enterprise Use with Extended Redistribution Rights
               </p>
               <div className="flex justify-center items-baseline my-8">

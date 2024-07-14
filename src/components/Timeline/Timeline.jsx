@@ -30,7 +30,7 @@ export default function Timeline() {
       <h1 className={style.mainHeading}>
         Our Proven Process for Website Results
       </h1>
-      <p className={style.subHeading}>
+      <p className={`text-center ${style.subHeading}`}>
         Discover our detailed process for presenting innovative designs and
         successful solutions. Every project showcases our dedication to
         creativity, functionality, and client satisfaction.
@@ -47,7 +47,7 @@ export default function Timeline() {
 function Card({ heading, para, index }) {
   return (
     <motion.div
-      className={`bg-black text-white dark:bg-white dark:text-black ${style.card} `}
+      className={`bg-black text-white text-center dark:bg-white dark:text-black ${style.card} `}
       initial={{
         opacity: 0,
         // x: index % 2 === 0 ? 50 : -50,

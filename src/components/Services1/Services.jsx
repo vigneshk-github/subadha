@@ -33,7 +33,7 @@ export default function Services() {
               <h5 className="sm:mb-4 text-2xl pb-10 sm:text-4xl font-bold tracking-tight ">
                 Web Development
               </h5>
-              <p className="flex justify-center items-center font-normal text-xl px-4 py-4">
+              <p className="flex justify-center text-center items-center font-normal text-xl px-4 py-4">
                 As a team, we specialize in transforming design concepts into
                 fully functional websites, developing premium themes, creating
                 sophisticated animations, and writing custom code to meet
@@ -64,7 +64,7 @@ export default function Services() {
               <h5 className="sm:mb-4 text-2xl pb-10 sm:text-4xl font-bold tracking-tight">
                 App Development
               </h5>
-              <p className="flex justify-center items-center font-normal text-xl px-4 py-4">
+              <p className="flex justify-center text-center items-center font-normal text-xl px-4 py-4">
                 As a team, we excel in transforming design concepts into fully
                 functional mobile applications, developing premium app themes,
                 integrating advanced animations, and writing custom code to meet
