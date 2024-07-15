@@ -36,6 +36,15 @@ export default function Timeline() {
         creativity, functionality, and client satisfaction.
       </p>
       <div className={style.App}>
+        <div
+          className="absolute left-1/2 top-1/2 w-[50vw] h-[25vh] -z-10 rounded-t-full"
+          style={{
+            backgroundImage:
+              "linear-gradient(45deg, #4A249D, #009FBD, #F9E2AF)",
+            filter: "blur(100px)",
+            transform: "translate(-50%, -50%)", // Center the element
+          }}
+        ></div>
         {items.map((item, i) => (
           <Card key={i} heading={item.heading} para={item.para} index={i} />
         ))}
