@@ -47,8 +47,8 @@
 .logo {
     width: 100px;
     height: 70px;
-    mix-blend-mode: multiply;
-    /* Adjust dimensions as needed */
+    /* mix-blend-mode: multiply; */
+    
 }
 
 .menuIcon {

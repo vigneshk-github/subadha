@@ -28,7 +28,7 @@ export default function Services() {
           <div className=" px-1 py-1 mx-auto max-w-screen-xl flex items-center justify-center lg:py-16 lg:px-6">
             <a
               href="#"
-              className="bg-black text-white mx-auto max-w-screen-md flex items-center justify-center flex-col w-full p-8 w-100 sm:p-16 border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 dark:bg-gray-800 dark:border-gray-700"
+              className="bg-black dark:bg-white dark:text-black text-white mx-auto max-w-screen-md flex items-center justify-center flex-col w-full p-8 w-100 sm:p-16 border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 dark:border-gray-700"
             >
               <h5 className="sm:mb-4 text-2xl pb-10 sm:text-4xl font-bold tracking-tight ">
                 Web Development
@@ -59,7 +59,7 @@ export default function Services() {
           <div className="px-1 py-1 mx-auto max-w-screen-xl flex items-center justify-center lg:py-16 lg:px-6">
             <a
               href="#"
-              className="bg-black text-white mx-auto max-w-screen-md flex items-center justify-center flex-col w-full p-8 w-100 sm:p-16 border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 dark:bg-gray-800 dark:border-gray-700"
+              className="bg-black text-white dark:bg-white dark:text-black mx-auto max-w-screen-md flex items-center justify-center flex-col w-full p-8 w-100 sm:p-16 border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105  dark:border-gray-700"
             >
               <h5 className="sm:mb-4 text-2xl pb-10 sm:text-4xl font-bold tracking-tight">
                 App Development

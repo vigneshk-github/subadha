@@ -35,7 +35,7 @@ export default function Prices() {
             </p>
           </div>
           <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
-            <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-white bg-black rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+            <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-white bg-black dark:bg-white dark:text-black rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 ">
               <h3 className="mb-4 text-2xl font-semibold">Launch Plan</h3>
               <p className="font-light sm:text-lg ">
                 Top pick for personal use and future endeavors.
@@ -45,13 +45,14 @@ export default function Prices() {
                   ₹80,000 ($958)
                 </span>
               </div>
-              <a href="https://calendly.com/subadha-co-in/subadha">
-                <button
-                  type="button"
-                  className="bg-gray-400 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-6 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
-                >
+              <a
+                href="https://calendly.com/subadha-co-in/subadha"
+                class="rounded-md px-3.5 py-2 mb-5 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-white text-white"
+              >
+                <span class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
+                <span class="relative text-white text-xl transition duration-300 group-hover:text-black ease">
                   Book a Call
-                </button>
+                </span>
               </a>
               <ul role="list" className="mb-8 space-y-4 text-left">
                 <li className="flex items-center space-x-3">
@@ -120,7 +121,7 @@ export default function Prices() {
                 className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900"
               ></a>
             </div>
-            <div className="flex flex-col p-6 mx-auto max-w-lg text-center bg-black text-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+            <div className="flex flex-col p-6 mx-auto max-w-lg text-center bg-black text-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-white dark:text-black">
               <h3 className="mb-4 text-2xl font-semibold">Elite Package</h3>
               <p className="font-lightsm:text-lg ">
                 Designed for Multiple Users with Extended Premium Support.
@@ -130,13 +131,14 @@ export default function Prices() {
                   ₹2,50,000 ($2,994)
                 </span>
               </div>
-              <a href="https://calendly.com/subadha-co-in/subadha">
-                <button
-                  type="button"
-                  className="bg-gray-400 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-6 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
-                >
+              <a
+                href="https://calendly.com/subadha-co-in/subadha"
+                class="rounded-md px-3.5 py-2 mb-5 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-white text-white"
+              >
+                <span class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
+                <span class="relative text-white text-xl transition duration-300 group-hover:text-black ease">
                   Book a Call
-                </button>
+                </span>
               </a>
               <ul role="list" className="mb-8 space-y-4 text-left">
                 <li className="flex items-center space-x-3">
@@ -220,7 +222,7 @@ export default function Prices() {
                 className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900"
               ></a>
             </div>
-            <div className="flex flex-col p-6 mx-auto max-w-lg text-center bg-black text-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+            <div className="flex flex-col p-6 mx-auto max-w-lg text-center bg-black text-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-white dark:text-black">
               <h3 className="mb-4 text-2xl font-semibold">Prototype Design</h3>
               <p className="font-light sm:text-lg ">
                 Ideal for Enterprise Use with Extended Redistribution Rights
@@ -231,13 +233,14 @@ export default function Prices() {
                 </span>
                 <span className="text-gray-500 dark:text-gray-400"></span>
               </div>
-              <a href="https://calendly.com/subadha-co-in/subadha">
-                <button
-                  type="button"
-                  className="bg-gray-400 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-6 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
-                >
+              <a
+                href="https://calendly.com/subadha-co-in/subadha"
+                class="rounded-md px-3.5 py-2 mb-5 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-white text-white w-43"
+              >
+                <span class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-white top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
+                <span class="relative text-white text-xl transition duration-300 group-hover:text-black ease">
                   Book a Call
-                </button>
+                </span>
               </a>
               <ul role="list" className="mb-8 space-y-4 text-left">
                 <li className="flex items-center space-x-3">

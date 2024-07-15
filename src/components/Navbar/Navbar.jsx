@@ -24,7 +24,7 @@ const Navbar = () => {
       <nav className={styles.navLinks}>
         <div className={styles.logoContainer}>
           <Image
-            src="/images/logo.png"
+            src="/images/logo4.png"
             alt="Logo"
             className={styles.logo}
             width={50}

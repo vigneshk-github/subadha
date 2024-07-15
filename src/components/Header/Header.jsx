@@ -50,26 +50,49 @@ export default function Header() {
       >
         <div className={styles.header}>
           <div className={styles.container}>
-            <h1 className={`sm:px-4  mx-20 ${styles.intro}`}>We Build Websites</h1>
+            <h1 className={`sm:px-4  mx-20 ${styles.intro}`}>
+              We Build Websites
+            </h1>
             <h1 className={`sm:px-4 mx-20 ${styles.intro}`}>For Your Brands</h1>
             <div className="but">
-              <a href="https://calendly.com/subadha-co-in/subadha">
+              <a
+                href="https://calendly.com/subadha-co-in/subadha"
+                className="sm:ml-60 pt-10 sm:pt-0 ml-0 relative inline-block text-lg group"
+              >
+                <span className="relative z-10 block px-5 pt-3 py-3 sm:px-5 sm:py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
+                  <span className="absolute inset-0 w-full h-full px-7 sm:px-5 sm:py-3 rounded-lg bg-gray-50"></span>
+                  <span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>
+                  <span className="relative">Book a Free Call </span>
+                </span>
+                <span
+                  className="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0"
+                  data-rounded="rounded-lg"
+                ></span>
+              </a>
+              {/* <a href="https://calendly.com/subadha-co-in/subadha">
                 <button
                   type="button"
-                  className="sm:ml-24 mt-6 -ml-4 bg-slate-400 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-xl  px-2 py-2 sm:px-5 sm:py-2.5 text-center sm:me-2 sm:mb-2 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
+                  className="but1 sm:ml-24 mt-6 -ml-4 bg-slate-400 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-xl  px-2 py-2 sm:px-5 sm:py-2.5 text-center sm:me-2 sm:mb-2 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
                 >
                   Book a free Call
                 </button>
-              </a>
-              <a href="#projects">
-                <button
-                  type="button"
-                  className="ml-10 bg-slate-400 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-xl px-2 py-2 sm:px-5 sm:py-2.5 text-center sm:me-2 sm:mb-2 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
-                >
-                  Projects
-                </button>
+              </a> */}
+              <a
+                href="#projects"
+                className=" ml-10 relative inline-block text-lg group"
+              >
+                <span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
+                  <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
+                  <span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>
+                  <span className="relative">Projects</span>
+                </span>
+                <span
+                  className="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0"
+                  data-rounded="rounded-lg"
+                ></span>
               </a>
             </div>
+
             <script
               type="text/javascript"
               src="https://assets.calendly.com/assets/external/widget.js"
@@ -88,7 +111,7 @@ export default function Header() {
                 className="flex-1 justify-end -mt-10 md:-mt-32 top-30 right-20"
               >
                 <Image
-                  src="/images/logo.png"
+                  src="/images/logo2.jpeg"
                   height={250}
                   width={250}
                   alt="Logo"

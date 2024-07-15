@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <>
       <footer
-        className={`text-white text-lg font-bold footer bg-base-200 p-10 ${style.footer}`}
+        className={`text-white dark:bg-white dark:text-black text-lg font-bold footer bg-base-200 p-10 ${style.footer}`}
       >
         <nav>
           <h6 className="footer-title">Company</h6>
@@ -35,7 +35,7 @@ export default function Footer() {
         </nav>
       </footer>
       <footer
-        className={`footer bg-base-200 text-base-content border-base-300 border-t px-10 py-4 ${style.footerBottom}`}
+        className={`footer dark:bg-white dark:text-black bg-base-200 text-base-content border-base-300 border-t px-10 py-4 ${style.footerBottom}`}
       >
         <nav className="sm:place-self-center sm::justify-self-end">
           <div className="flex sm:flex-row flex-col sm:justify-center sm:flex-end sm:items-center sm:pr-10">

@@ -102,4 +102,10 @@ const cards = [
     id: 6,
     link: "https://accugenediagnostics.com/",
   },
+  {
+    url: "/images/p7.png",
+    titile: "Title 7",
+    id: 7,
+    link: "https://osclogin.netlify.app/",
+  },
 ];
