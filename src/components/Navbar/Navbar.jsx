@@ -19,7 +19,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className={styles.navbar}>
+    <header className={` font-body ${styles.navbar}`}>
       <div className={styles.navbarBackground}></div>
       <nav className={styles.navLinks}>
         <div className={styles.logoContainer}>
@@ -57,7 +57,7 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            href="#projects"
+            href="/#projects"
             scroll={true}
             className={styles.smoothscroll}
             onClick={closeMenu}
@@ -65,7 +65,7 @@ const Navbar = () => {
             Projects
           </Link>
           <Link
-            href="#service"
+            href="/#service"
             scroll={true}
             className={styles.smoothscroll}
             onClick={closeMenu}
@@ -73,7 +73,7 @@ const Navbar = () => {
             Services
           </Link>
           <Link
-            href="#testimonial"
+            href="/#testimonial"
             scroll={true}
             className={styles.smoothscroll}
             onClick={closeMenu}
@@ -81,7 +81,7 @@ const Navbar = () => {
             Testimonials
           </Link>
           <Link
-            href="#contactus"
+            href="/#contactus"
             scroll={true}
             className={styles.smoothscroll}
             onClick={closeMenu}

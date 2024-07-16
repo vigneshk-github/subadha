@@ -30,8 +30,8 @@ export default function Footer() {
         </nav>
         <nav>
           <h6 className="no-underline footer-title">Legal</h6>
-          <Link href="/">Terms of use</Link>
-          <Link href="/">Privacy policy</Link>
+          <Link href="/Terms">Terms of use</Link>
+          <Link href="/Policy">Privacy policy</Link>
         </nav>
       </footer>
       <footer

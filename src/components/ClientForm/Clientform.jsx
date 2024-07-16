@@ -34,7 +34,7 @@ function Clientform() {
   };
 
   return (
-    <main id="contactus" className="bg-white text-black dark:bg-black dark:text-white">
+    <main id="contactus" className="font-body bg-white text-black dark:bg-black dark:text-white">
       <motion.div
         initial={{
           opacity: 0,

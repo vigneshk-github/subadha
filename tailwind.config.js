@@ -5,7 +5,7 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode:"class",
+  darkMode: "class",
   theme: {
     extend: {
       animation: {
@@ -16,6 +16,9 @@ module.exports = {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-100%)" },
         },
+      },
+      fontFamily: {
+        body: ["Orbitron"]
       },
     },
   },
