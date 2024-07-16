@@ -11,7 +11,7 @@ import { Environment, OrbitControls, ambientLight } from "@react-three/drei";
 export default function Header() {
   const ctx = useContext(ThemeContext);
 
-  const textOptions = ["Hello", "World", "React"];
+  const textOptions = ["Business", "Ecommerce", "and More"];
 
   const [currentText, setCurrentText] = useState(textOptions[0]);
 

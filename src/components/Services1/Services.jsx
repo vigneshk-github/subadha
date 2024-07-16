@@ -10,7 +10,7 @@ export default function Services() {
       <h1 className="text-5xl text-center my-12 font-extrabold  sm:text-7xl tracking-tight">
         Services
       </h1>
-      <div className="grid grid-cols-1  md:grid-cols-2  gap-1 mx-auto max-w-8xl">
+      <div className="grid grid-cols-1 md:grid-cols-2  gap-1 mx-auto max-w-8xl">
         <motion.div
           initial={{
             opacity: 0,
@@ -25,7 +25,7 @@ export default function Services() {
           }}
           viewport={{ once: true }}
         >
-          <div className="px-1 py-1 mx-auto max-w-screen-xl flex items-center justify-center sm:py-16 sm:px-6">
+          <div className="px-1 py-1 mx-auto max-w-screen-xl flex items-center justify-center  sm:px-6">
             <a
               href="#"
               className="bg-black text-white mx-auto max-w-screen-md flex items-center justify-center flex-col w-full p-8 w-100 sm:p-16 border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 dark:bg-gray-800 dark:border-gray-700"
@@ -49,7 +49,7 @@ export default function Services() {
                   </svg>
                   <span>Personalized Designs</span>
                   <div
-                    className="absolute left-1/2 top-1/2 w-[50vw] h-[25vh] -z-10 rounded-t-full"
+                    className="absolute left-1/2 top-1/2 w-[30vw] h-[25vh] -z-10 rounded-t-full"
                     style={{
                       backgroundImage:
                         "linear-gradient(45deg, #4A249D, #009FBD, #F9E2AF)",
@@ -121,7 +121,7 @@ export default function Services() {
           }}
           viewport={{ once: true }}
         >
-          <div className="px-1 py-1 mx-auto max-w-screen-xl flex items-center justify-center sm:py-16 sm:px-6">
+          <div className="px-1 py-1 mx-auto max-w-screen-xl flex items-center justify-center sm:px-6">
             <a
               href="#"
               className="bg-black text-white mx-auto max-w-screen-md flex items-center justify-center flex-col w-full p-8 w-100 sm:p-16 border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 dark:bg-gray-800 dark:border-gray-700"
@@ -145,7 +145,7 @@ export default function Services() {
                   </svg>
                   <span>Design to development</span>
                   <div
-                    className="absolute left-1/2 top-1/2 w-[50vw] h-[25vh] -z-10 rounded-t-full"
+                    className="absolute left-1/2 top-1/2 w-[30vw] h-[25vh] -z-10 rounded-t-full"
                     style={{
                       backgroundImage:
                         "linear-gradient(45deg, #4A249D, #009FBD, #F9E2AF)",
@@ -217,7 +217,7 @@ export default function Services() {
           }}
           viewport={{ once: true }}
         >
-          <div className="px-1 py-1 mx-auto max-w-screen-xl flex items-center justify-center sm:py-16 sm:px-6">
+          <div className="px-1 py-1 mx-auto max-w-screen-xl flex items-center justify-center sm:px-6">
             <a
               href="#"
               className="bg-black text-white mx-auto max-w-screen-md flex items-center justify-center flex-col w-full p-8 w-100 sm:p-16 border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 dark:bg-gray-800 dark:border-gray-700"
@@ -241,7 +241,7 @@ export default function Services() {
                   </svg>
                   <span>A/B testing and analysis</span>
                   <div
-                    className="absolute left-1/2 top-1/2 w-[50vw] h-[25vh] -z-10 rounded-t-full"
+                    className="absolute left-1/2 top-1/2 w-[30vw] h-[25vh] -z-10 rounded-t-full"
                     style={{
                       backgroundImage:
                         "linear-gradient(45deg, #4A249D, #009FBD, #F9E2AF)",
@@ -298,7 +298,7 @@ export default function Services() {
           }}
           viewport={{ once: true }}
         >
-          <div className="px-1 py-1 mx-auto max-w-screen-xl flex items-center justify-center sm:py-16 sm:px-6">
+          <div className="px-1 py-1 mx-auto max-w-screen-xl flex items-center justify-center  sm:px-6">
             <a
               href="#"
               className="bg-black text-white mx-auto max-w-screen-md flex items-center justify-center flex-col w-full p-8 w-100 sm:p-16 border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 dark:bg-gray-800 dark:border-gray-700"
@@ -322,7 +322,7 @@ export default function Services() {
                   </svg>
                   <span>Keyword research and optimization</span>
                   <div
-                    className="absolute left-1/2 top-1/2 w-[50vw] h-[25vh] -z-10 rounded-t-full"
+                    className="absolute left-1/2 top-1/2 w-[30vw] h-[25vh] -z-10 rounded-t-full"
                     style={{
                       backgroundImage:
                         "linear-gradient(45deg, #4A249D, #009FBD, #F9E2AF)",
@@ -379,7 +379,7 @@ export default function Services() {
           }}
           viewport={{ once: true }}
         >
-          <div className="px-1 py-1 mx-auto max-w-screen-xl flex items-center justify-center sm:py-16 sm:px-6">
+          <div className="px-1 py-1 mx-auto max-w-screen-xl flex items-center justify-center  sm:px-6">
             <a
               href="#"
               className="bg-black text-white mx-auto max-w-screen-md flex items-center justify-center flex-col w-full p-8 w-100 sm:p-16 border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 dark:bg-gray-800 dark:border-gray-700"
@@ -403,7 +403,7 @@ export default function Services() {
                   </svg>
                   <span>Live streaming setup and support</span>
                   <div
-                    className="absolute left-1/2 top-1/2 w-[50vw] h-[25vh] -z-10 rounded-t-full"
+                    className="absolute left-1/2 top-1/2 w-[30vw] h-[25vh] -z-10 rounded-t-full"
                     style={{
                       backgroundImage:
                         "linear-gradient(45deg, #4A249D, #009FBD, #F9E2AF)",
@@ -460,7 +460,7 @@ export default function Services() {
           }}
           viewport={{ once: true }}
         >
-          <div className="px-1 py-1 mx-auto max-w-screen-xl flex items-center justify-center sm:py-16 sm:px-6">
+          <div className="px-1 py-1 mx-auto max-w-screen-xl flex items-center justify-center  sm:px-6">
             <a
               href="#"
               className="bg-black text-white mx-auto max-w-screen-md flex items-center justify-center flex-col w-full p-8 w-100 sm:p-16 border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 dark:bg-gray-800 dark:border-gray-700"
@@ -484,7 +484,7 @@ export default function Services() {
                   </svg>
                   <span>Regular website updates and security checks</span>
                   <div
-                    className="absolute left-1/2 top-1/2 w-[50vw] h-[25vh] -z-10 rounded-t-full"
+                    className="absolute left-1/2 top-1/2 w-[30vw] h-[25vh] -z-10 rounded-t-full"
                     style={{
                       backgroundImage:
                         "linear-gradient(45deg, #4A249D, #009FBD, #F9E2AF)",

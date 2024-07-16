@@ -24,11 +24,11 @@ const Navbar = () => {
       <nav className={styles.navLinks}>
         <div className={styles.logoContainer}>
           <Image
-            src="/images/logo4.png"
+            src="/images/logo5.png"
             alt="Logo"
             className={styles.logo}
-            width={50}
-            height={50}
+            width={40}
+            height={40}
           />
         </div>
         <div
