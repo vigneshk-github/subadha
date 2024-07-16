@@ -14,6 +14,7 @@ export default function RootLayout({ children }) {
       <Head>
         <title>Subadha</title>
         <meta name="description" content="Subadha" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <body className={inter.className}>
         <ThemeProvider>
