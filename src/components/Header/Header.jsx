@@ -112,7 +112,7 @@ export default function Header() {
           </div>
         </div>
       </motion.div>
-      <div className="absolute ml-[900px] -mt-[70px] mb-[100px] top-26 w-[500px] h-[700px] ">
+      <div className="img1 absolute ml-[900px] -mt-[70px] mb-[100px] top-26 w-[500px] h-[700px] ">
         <Canvas className="mb-[100px]">
           <ambientLight intensity={1.2} />
           <OrbitControls enableZoom={false}/>
