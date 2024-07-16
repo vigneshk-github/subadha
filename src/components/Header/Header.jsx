@@ -66,7 +66,7 @@ export default function Header() {
             <div className="but">
               <a
                 href="https://calendly.com/subadha-co-in/subadha"
-                className="sm:ml-28 pt-10 sm:pt-0 ml-0 relative inline-block text-lg group"
+                className="sm:ml-28 pt-10 sm:pt-0 -ml-8 relative inline-block text-sm group"
               >
                 <span className="relative z-10 block px-5 pt-3 py-3 sm:px-5 sm:py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
                   <span className="absolute inset-0 w-full h-full px-7 sm:px-5 sm:py-3 rounded-lg bg-gray-50"></span>
@@ -80,7 +80,7 @@ export default function Header() {
               </a>
               <a
                 href="#projects"
-                className=" ml-10 relative inline-block text-lg group"
+                className=" ml-5 relative inline-block text-sm group"
               >
                 <span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
                   <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
@@ -101,7 +101,7 @@ export default function Header() {
             ></script>
             <div className="flex flex-col md:flex-row mt-8 w-full">
               <div className="flex-1 mb-4 md:mb-0 ">
-                <p className="flex px-10 mx-4 sm:text-left text-center -py-20  justify-center items-center pl-4 m-4 sm:px-50 sm:mr-50 text-xl sm:pl-15 sm:ml-20 sm:pr-[600px] sm:-mt-[30px] font-normal">
+                <p className="flex px-10 mx-4 sm:text-left text-center -py-20  justify-center items-center pl-4 m-4 sm:px-50 sm:mr-50 text-sm sm:pl-15 sm:ml-20 sm:pr-[600px] sm:-mt-[30px] font-normal">
                   Explore our diverse portfolio of innovative web designs and
                   successful projects. Each piece reflects our commitment to
                   quality, creativity, and client satisfaction.
