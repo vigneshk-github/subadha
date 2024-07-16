@@ -51,7 +51,7 @@ export default function Header() {
               We Build Websites For Your
             </h1>
             <h1 className={`sm:px-4 mx-20 ${styles.intro}`}></h1>
-            <h1 className="sm:px-[100px] sm:text-[70px] sm:pb-5 text-5xl">
+            <h1 className="sm:pl-[57px] sm:text-[70px] sm:pb-5 text-5xl">
               <motion.span
                 key={currentText} // Reset animation on text change
                 initial={{ opacity: 0 }}
@@ -66,7 +66,7 @@ export default function Header() {
             <div className="but">
               <a
                 href="https://calendly.com/subadha-co-in/subadha"
-                className="sm:ml-28 pt-10 sm:pt-0 -ml-8 relative inline-block text-sm group"
+                className="sm:ml-12 pt-10 sm:pt-0 -ml-8 relative inline-block text-sm group"
               >
                 <span className="relative z-10 block px-5 pt-3 py-3 sm:px-5 sm:py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
                   <span className="absolute inset-0 w-full h-full px-7 sm:px-5 sm:py-3 rounded-lg bg-gray-50"></span>
