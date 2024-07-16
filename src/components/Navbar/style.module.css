@@ -38,15 +38,18 @@
     position: relative;
 }
 
-.logoContainer {
+.logoContainer>*{
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
+    flex-direction: row;
+
 }
 
 .logo {
-    width: 100px;
+    width: 70px;
     height: 50px;
+    padding-right: 7px;
     /* mix-blend-mode: multiply; */
     
 }

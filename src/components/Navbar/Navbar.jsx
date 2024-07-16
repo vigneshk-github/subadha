@@ -23,13 +23,16 @@ const Navbar = () => {
       <div className={styles.navbarBackground}></div>
       <nav className={styles.navLinks}>
         <div className={styles.logoContainer}>
-          <Image
-            src="/images/logo5.png"
-            alt="Logo"
-            className={styles.logo}
-            width={40}
-            height={40}
-          />
+          <h3>
+            <Image
+              src="/images/logo5.png"
+              alt="Logo"
+              className={styles.logo}
+              width={40}
+              height={40}
+            />
+            Subadha
+          </h3>
         </div>
         <div
           className={`${styles.menuIcon} ${menuOpen ? styles.open : ""}`}
@@ -40,9 +43,11 @@ const Navbar = () => {
           <div className={styles.burger}></div>
         </div>
         <div className={`${styles.links} ${menuOpen ? styles.show : ""}`}>
-          {menuOpen && <div className={styles.closeButton} onClick={closeMenu}>
-            &times;
-          </div>}
+          {menuOpen && (
+            <div className={styles.closeButton} onClick={closeMenu}>
+              &times;
+            </div>
+          )}
           <Link
             href="/"
             scroll={true}
