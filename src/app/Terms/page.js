@@ -2,7 +2,7 @@ import React from "react";
 
 export default function TermsAndConditions() {
   return (
-    <div className="sm:mt-[100px] bg-white dark:bg-gray-900 text-black dark:text-white min-h-screen p-4 md:p-8">
+    <div className="font-body sm:mt-[100px] bg-white dark:bg-gray-900 text-black dark:text-white min-h-screen p-4 md:p-8">
       <div className="max-w-4xl mx-auto">
         <div className="text-2xl font-bold mb-4 text-center">
           Website Terms and Conditions of Use
@@ -110,10 +110,7 @@ export default function TermsAndConditions() {
           <h2 className="text-xl font-semibold">8. Your Privacy</h2>
           <p>
             Please read our{" "}
-            <a
-              href="/Policy"
-              className="text-blue-600 dark:text-blue-400"
-            >
+            <a href="/Policy" className="text-blue-600 dark:text-blue-400">
               Privacy Policy
             </a>
             .

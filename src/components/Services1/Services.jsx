@@ -5,7 +5,7 @@ export default function Services() {
   return (
     <main
       id="service"
-      className="dark:text-white dark:bg-black text-black bg-white pt-30 mt-20 sm:py-12 px-4 sm:px-6 sm:mt-[-80px]"
+      className="font-body dark:text-white dark:bg-black text-black bg-white pt-30 mt-20 sm:py-12 px-4 sm:px-6 sm:mt-[-80px]"
     >
       <h1 className="text-5xl text-center my-12 font-extrabold  sm:text-7xl tracking-tight">
         Services
@@ -222,7 +222,7 @@ export default function Services() {
               href="#"
               className="bg-black text-white mx-auto max-w-screen-md flex items-center justify-center flex-col w-full p-8 w-100 sm:p-16 border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 dark:bg-gray-800 dark:border-gray-700"
             >
-              <h5 className="sm:mb-4 text-2xl pb-10 sm:text-4xl font-bold tracking-tight">
+              <h5 className="sm:mb-4 text-2xl pb-10 sm:text-4xl text-center font-bold tracking-tight">
                 Conversion Rate Optimization
               </h5>
               <ul role="list" className="mb-8 space-y-4 text-left">
@@ -303,10 +303,10 @@ export default function Services() {
               href="#"
               className="bg-black text-white mx-auto max-w-screen-md flex items-center justify-center flex-col w-full p-8 w-100 sm:p-16 border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 dark:bg-gray-800 dark:border-gray-700"
             >
-              <h5 className="sm:mb-4 text-2xl pb-10 sm:text-4xl font-bold tracking-tight">
+              <h5 className="text-center sm:mb-4 text-2xl pb-10 sm:text-4xl font-bold tracking-tight">
                 SEO and Content Marketing
               </h5>
-              <ul role="list" className="mb-8 space-y-4 text-left">
+              <ul role="list" className="mb-8 space-y-8 text-left">
                 <li className="flex items-center space-x-3">
                   <svg
                     className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"

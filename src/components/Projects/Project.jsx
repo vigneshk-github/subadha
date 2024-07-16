@@ -19,7 +19,7 @@ const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["36%", "-38%"]);
 
   return (
-    <section ref={targetRef} className="text-black bg-white dark:bg-black dark:text-white -mt-[103px] -mb-40 sm:mb-20 sm:mt-0 relative h-[300vh]">
+    <section ref={targetRef} className="font-body text-black bg-white dark:bg-black dark:text-white -mt-[103px] -mb-40 sm:mb-20 sm:mt-0 relative h-[300vh]">
       <div className="flex-col sticky top-0 flex h-screen items-center overflow-hidden">
         <div className=" px-4 mx-auto max-w-screen-md sm:py-4 sm:px-4 flex flex-col sm:pb-[-10px] items-center justify-center">
           <span className="font-semibold mb-20 text-6xl sm:text-7xl">

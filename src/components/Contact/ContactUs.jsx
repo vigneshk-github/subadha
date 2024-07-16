@@ -36,7 +36,7 @@ function ContactUs() {
   return (
     <main
       id="contactus"
-      className="dark:text-white dark:bg-black text-black bg-white"
+      className="font-body dark:text-white dark:bg-black text-black bg-white"
     >
       <motion.div
         initial={{

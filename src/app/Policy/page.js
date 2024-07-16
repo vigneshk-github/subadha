@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Policy() {
   return (
-    <div className="sm:mt-[100px] bg-white dark:bg-gray-900 text-black dark:text-white min-h-screen p-4 md:p-8">
+    <div className="font-body sm:mt-[100px] bg-white dark:bg-gray-900 text-black dark:text-white min-h-screen p-4 md:p-8">
       <div className="max-w-4xl mx-auto">
         <div className="text-2xl font-bold mb-4 text-center">
           Privacy Policy for Subadha
@@ -38,12 +38,11 @@ export default function Policy() {
           </p>
           <h2 className="text-xl font-semibold">Cookies and Web Beacons</h2>
           <p>
-            Like any other website, Subadha uses cookies. These cookies are
-            used to store information including visitors preferences, and the
-            pages on the website that the visitor accessed or visited. The
-            information is used to optimize the users experience by customizing
-            our web page content based on visitors browser type and/or other
-            information.
+            Like any other website, Subadha uses cookies. These cookies are used
+            to store information including visitors preferences, and the pages
+            on the website that the visitor accessed or visited. The information
+            is used to optimize the users experience by customizing our web page
+            content based on visitors browser type and/or other information.
           </p>
           <h2 className="text-xl font-semibold">
             Google DoubleClick DART Cookie

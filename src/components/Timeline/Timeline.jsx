@@ -26,7 +26,7 @@ export default function Timeline() {
   ];
 
   return (
-    <div className="dark:text-white dark:bg-black text-black bg-white">
+    <div className="font-body dark:text-white dark:bg-black text-black bg-white">
       <h1 className={style.mainHeading}>
         Our Proven Process for Website Results
       </h1>
@@ -70,8 +70,8 @@ function Card({ heading, para, index }) {
       }}
       viewport={{ once: true }}
     >
-      <h1 className={style.cardheading}>{heading}</h1>
-      <p className={style.cardpara}>{para}</p>
+      <h1 className={`font-body ${style.cardheading}`}>{heading}</h1>
+      <p className={`font-body ${style.cardpara}`}>{para}</p>
     </motion.div>
   );
 }
