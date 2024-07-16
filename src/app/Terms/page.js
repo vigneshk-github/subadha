@@ -27,7 +27,7 @@ export default function TermsAndConditions() {
           <h2 className="text-xl font-semibold">2. Use License</h2>
           <p>
             Permission is granted to temporarily download one copy of the
-            materials on Subadha's Website for personal, non-commercial
+            materials on Subadhas Website for personal, non-commercial
             transitory viewing only. This is the grant of a license, not a
             transfer of title, and under this license you may not:
           </p>
@@ -38,7 +38,7 @@ export default function TermsAndConditions() {
               display;
             </li>
             <li>
-              attempt to reverse engineer any software contained on Subadha's
+              attempt to reverse engineer any software contained on Subadhas
               Website;
             </li>
             <li>
@@ -46,7 +46,7 @@ export default function TermsAndConditions() {
               materials; or
             </li>
             <li>
-              transferring the materials to another person or "mirror" the
+              transferring the materials to another person or mirror the
               materials on any other server.
             </li>
           </ul>
@@ -61,7 +61,7 @@ export default function TermsAndConditions() {
 
           <h2 className="text-xl font-semibold">3. Disclaimer</h2>
           <p>
-            All the materials on Subadha's Website are provided "as is". Subadha
+            All the materials on Subadhas Website are provided as is. Subadha
             makes no warranties, may it be expressed or implied, therefore
             negates all other warranties. Furthermore, Subadha does not make any
             representations concerning the accuracy or reliability of the use of
@@ -73,7 +73,7 @@ export default function TermsAndConditions() {
           <p>
             Subadha or its suppliers will not be held accountable for any
             damages that will arise with the use or inability to use the
-            materials on Subadha's Website, even if Subadha or an authorized
+            materials on Subadhas Website, even if Subadha or an authorized
             representative of this Website has been notified, orally or written,
             of the possibility of such damage. Some jurisdictions do not allow
             limitations on implied warranties or limitations of liability for
@@ -82,7 +82,7 @@ export default function TermsAndConditions() {
 
           <h2 className="text-xl font-semibold">5. Revisions and Errata</h2>
           <p>
-            The materials appearing on Subadha's Website may include technical,
+            The materials appearing on Subadhas Website may include technical,
             typographical, or photographic errors. Subadha will not promise that
             any of the materials in this Website are accurate, complete, or
             current. Subadha may change the materials contained on its Website
@@ -95,7 +95,7 @@ export default function TermsAndConditions() {
             Subadha has not reviewed all of the sites linked to its Website and
             is not responsible for the contents of any such linked site. The
             presence of any link does not imply endorsement by Subadha of the
-            site. The use of any linked website is at the user's own risk.
+            site. The use of any linked website is at the users own risk.
           </p>
 
           <h2 className="text-xl font-semibold">
@@ -121,7 +121,7 @@ export default function TermsAndConditions() {
 
           <h2 className="text-xl font-semibold">9. Governing Law</h2>
           <p>
-            Any claim related to Subadha's Website shall be governed by the laws
+            Any claim related to Subadhas Website shall be governed by the laws
             of in without regards to its conflict of law provisions.
           </p>
         </div>
