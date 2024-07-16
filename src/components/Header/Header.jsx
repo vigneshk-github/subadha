@@ -66,7 +66,7 @@ export default function Header() {
             <div className="but">
               <a
                 href="https://calendly.com/subadha-co-in/subadha"
-                className="sm:ml-12 pt-10 sm:pt-0 -ml-8 relative inline-block text-sm group"
+                className="sm:ml-[58px] pt-10 sm:pt-0 -ml-8 relative inline-block text-sm group"
               >
                 <span className="relative z-10 block px-5 pt-3 py-3 sm:px-5 sm:py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
                   <span className="absolute inset-0 w-full h-full px-7 sm:px-5 sm:py-3 rounded-lg bg-gray-50"></span>
@@ -101,7 +101,7 @@ export default function Header() {
             ></script>
             <div className="flex flex-col md:flex-row mt-8 w-full">
               <div className="flex-1 mb-4 md:mb-0 ">
-                <p className="flex px-10 mx-4 sm:text-left text-center -py-20  justify-center items-center pl-4 m-4 sm:px-50 sm:mr-50 text-sm sm:pl-15 sm:ml-20 sm:pr-[600px] sm:-mt-[30px] font-normal">
+                <p className="flex px-10 mx-4 sm:text-left text-center -py-20  justify-center items-center pl-4 m-4 sm:px-50 sm:mr-50 text-sm sm:pl-15 sm:ml-[43px] sm:pr-[600px] sm:-mt-[30px] font-normal">
                   Explore our diverse portfolio of innovative web designs and
                   successful projects. Each piece reflects our commitment to
                   quality, creativity, and client satisfaction.
@@ -113,14 +113,14 @@ export default function Header() {
         </div>
       </motion.div>
       <div className="img1 absolute ml-[900px] -mt-[70px] mb-[100px] top-26 w-[500px] h-[700px] ">
-        {/* <Canvas className="mb-[100px]">
+        <Canvas className="mb-[100px]">
           <ambientLight intensity={1.2} />
           <OrbitControls enableZoom={false} />
           <Suspense fallback={null}>
             <Scene scale={[0.18, 0.18, 0.18]} />
           </Suspense>
           <Environment preset="sunset" />
-        </Canvas> */}
+        </Canvas>
       </div>
     </div>
   );
