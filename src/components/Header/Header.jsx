@@ -47,22 +47,22 @@ export default function Header() {
       >
         <div className={styles.header}>
           <div className={styles.container}>
-            <h1 className={`sm:px-4  mx-20 ${styles.intro}`}>
-              We Build Websites
+            <h1 className={`sm:px-4 sm:mr-[620px] mx-20 ${styles.intro}`}>
+              We Build Websites For Your
             </h1>
-            <h1 className={`sm:px-4 mx-20 ${styles.intro}`}>
-              For Your
+            <h1 className={`sm:px-4 mx-20 ${styles.intro}`}></h1>
+            <h1 className="sm:px-[100px] sm:text-7xl text-5xl">
               <motion.span
                 key={currentText} // Reset animation on text change
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.5 }}
+                className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text"
               >
                 {` ${currentText}`}
               </motion.span>
             </h1>
-
             <div className="but">
               <a
                 href="https://calendly.com/subadha-co-in/subadha"
@@ -101,7 +101,7 @@ export default function Header() {
             ></script>
             <div className="flex flex-col md:flex-row mt-8 w-full">
               <div className="flex-1 mb-4 md:mb-0 ">
-                <p className="flex px-10 mx-4 sm:text-left text-center -py-20  justify-center items-center pl-4 m-4 sm:px-50 sm:mr-50 text-2xl sm:pl-15 sm:ml-20 sm:pr-[600px] font-normal">
+                <p className="flex px-10 mx-4 sm:text-left text-center -py-20  justify-center items-center pl-4 m-4 sm:px-50 sm:mr-50 text-2xl sm:pl-15 sm:ml-20 sm:pr-[600px] sm:-mt-[30px] font-normal">
                   Explore our diverse portfolio of innovative web designs and
                   successful projects. Each piece reflects our commitment to
                   quality, creativity, and client satisfaction.
@@ -115,7 +115,7 @@ export default function Header() {
       <div className="img1 absolute ml-[900px] -mt-[70px] mb-[100px] top-26 w-[500px] h-[700px] ">
         <Canvas className="mb-[100px]">
           <ambientLight intensity={1.2} />
-          <OrbitControls enableZoom={false}/>
+          <OrbitControls enableZoom={false} />
           <Suspense fallback={null}>
             <Scene scale={[0.18, 0.18, 0.18]} />
           </Suspense>

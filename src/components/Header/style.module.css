@@ -26,6 +26,7 @@
 .intro {
     margin-left: 40px;
     font-size: 80px;
+    margin-right: 100px;
 }
 
 
@@ -72,7 +73,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 15px;
+        font-size: 10px;
         /* Reduce font size for header */
     }
 
