@@ -39,7 +39,7 @@ export default function Team() {
               className="block w-full h-full"
             >
               <Image
-                src="/images/m2.jpg"
+                src="/images/m2.jpeg"
                 width={256}
                 height={256}
                 className="object-cover w-full h-full"
