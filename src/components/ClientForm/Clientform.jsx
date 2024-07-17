@@ -17,7 +17,7 @@ function Clientform() {
     emailjs
       .sendForm(
         "service_kjmogyu",
-        "template_aofz6l6",
+        "template_oyrbe2f",
         form.current,
         "9PGmJIUO3qckc9tGr"
       )

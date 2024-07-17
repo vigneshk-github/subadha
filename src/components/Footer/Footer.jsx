@@ -77,7 +77,7 @@ export default function Footer() {
             </span>
             <span>
               <Link
-                href="https://www.instagram.com/subadha.co.in?igsh=dGg5NGVsYzU2Nnps"
+                href="https://www.instagram.com/subadha.co.in/"
                 target="_blank"
                 className="flex sm:pr-10 items-center gap-2 hover:text-pink-500 transition"
               >
