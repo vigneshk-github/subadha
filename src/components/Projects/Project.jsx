@@ -20,8 +20,8 @@ const Project = () => {
   };
 
   return (
-    <div className="bg-white dark:bg-black">
-      <div className="text-black dark:text-white -mt-[110px] font-body px-4 mx-auto max-w-screen-md sm:py-4 sm:px-4 flex flex-col sm:pb-[-10px] items-center justify-center">
+    <div id="projects" className="bg-white dark:bg-black">
+      <div className="text-black dark:text-white -mt-[110px] sm:mt-0 font-body px-4 mx-auto max-w-screen-md sm:py-4 sm:px-4 flex flex-col sm:pb-[-10px] items-center justify-center">
         <span className="font-semibold mb-20 text-6xl sm:text-7xl">
           Projects
         </span>

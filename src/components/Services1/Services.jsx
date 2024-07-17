@@ -5,7 +5,7 @@ export default function Services() {
   return (
     <main
       id="service"
-      className="font-body dark:text-white dark:bg-black text-black bg-white sm:pt-30 -mt-[10px] pt-[10px] sm:py-12 px-4 sm:px-6 sm:mt-[-80px]"
+      className="font-body dark:text-white dark:bg-black text-black bg-white sm:pt-30 -mt-[10px] pt-[10px] sm:py-12 px-5 sm:px-6 sm:mt-[-80px]"
     >
       <h1 className="text-5xl text-center my-12 font-extrabold  sm:text-7xl tracking-tight">
         Services
