@@ -1,109 +1,3 @@
-"use client";
-// import { motion, useTransform, useScroll } from "framer-motion";
-// import { useRef } from "react";
-
-// const Project = () => {
-//   return (
-//     <div id="projects">
-//       <HorizontalScrollCarousel />
-//     </div>
-//   );
-// };
-
-// const HorizontalScrollCarousel = () => {
-//   const targetRef = useRef(null);
-//   const { scrollYProgress } = useScroll({
-//     target: targetRef,
-//   });
-
-//   const x = useTransform(scrollYProgress, [0, 1], ["36%", "-38%"]);
-
-//   return (
-//     <section ref={targetRef} className="font-body text-black bg-white dark:bg-black dark:text-white -mt-[103px] -mb-40 sm:mb-20 sm:mt-0 relative h-[300vh]">
-//       <div className="flex-col sticky top-0 flex h-screen items-center overflow-hidden">
-// <div className=" px-4 mx-auto max-w-screen-md sm:py-4 sm:px-4 flex flex-col sm:pb-[-10px] items-center justify-center">
-//   <span className="font-semibold mb-20 text-6xl sm:text-7xl">
-//     Projects
-//   </span>
-//   <p className="mb-5 px-4 py-4 font-normal text-center text-2xl sm:text-2xl">
-//     Explore our diverse portfolio showcasing innovative web solutions
-//     across various industries, each tailored to meet unique client
-//     needs.
-//   </p>
-// </div>
-//         <motion.div style={{ x }} className="flex gap-10">
-//           {cards.map((card) => {
-//             return <Card card={card} key={card.id} link={card.link} />;
-//           })}
-//         </motion.div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// const Card = ({ card }) => {
-//   return (
-//     <div
-//       key={card.id}
-//       className="group relative h-[300px] w-[530px] sm:h-[365px] sm:w-[730px] overflow-hidden"
-//     >
-//       <a href={card.link} target="_blank">
-//         <div
-//           style={{
-//             backgroundImage: `url(${card.url})`,
-//             backgroundSize: "cover",
-//             backgroundPosition: "center",
-//             width: "100%",
-//             height: "100%",
-//           }}
-//           className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
-//         ></div>
-//       </a>
-//     </div>
-//   );
-// };
-
-// export default Project;
-
-// const cards = [
-//   {
-//     url: "/images/p1.png",
-//     title: "Title 1",
-//     id: 1,
-//     link: "https://savegreenecobags.com/",
-//   },
-//   {
-//     url: "/images/p2.png",
-//     title: "Title 2",
-//     id: 2,
-//     link: "https://esratechedu.com/",
-//   },
-//   {
-//     url: "/images/p3.png",
-//     title: "Title 3",
-//     id: 3,
-//     link: "https://fmgreenindustry.com/",
-//   },
-//   {
-//     url: "/images/p4.png",
-//     title: "Title 4",
-//     id: 4,
-//     link: "https://sricmrinfra.com/",
-//   },
-//   {
-//     url: "/images/p5.png",
-//     title: "Title 5",
-//     id: 5,
-//     link: "https://gfemsolutions.com/",
-//   },
-//   {
-//     url: "/images/p6.png",
-//     title: "Title 6",
-//     id: 6,
-//     link: "https://accugenediagnostics.com/",
-//   },
-// ];
-
 import { useState } from "react";
 
 const Project = () => {
@@ -126,8 +20,8 @@ const Project = () => {
   };
 
   return (
-    <div className="bg-white dark:bg-black ">
-      <div className="text-black dark:text-white font-body px-4 mx-auto max-w-screen-md sm:py-4 sm:px-4 flex flex-col sm:pb-[-10px] items-center justify-center">
+    <div className="bg-white dark:bg-black">
+      <div className="text-black dark:text-white -mt-[110px] font-body px-4 mx-auto max-w-screen-md sm:py-4 sm:px-4 flex flex-col sm:pb-[-10px] items-center justify-center">
         <span className="font-semibold mb-20 text-6xl sm:text-7xl">
           Projects
         </span>
@@ -138,11 +32,11 @@ const Project = () => {
       </div>
       <div
         id="default-carousel"
-        className="relative w-full px-[100px]"
+        className="relative w-full px-[5%] md:px-[10%] xl:px-[15%]"
         data-carousel="slide"
       >
         {/* Carousel wrapper */}
-        <div className="relative h-96 md:h-[600px] md:w-[1300px] overflow-hidden rounded-lg">
+        <div className="relative h-96 md:h-[50vh] lg:h-[60vh] xl:h-[70vh] w-full overflow-hidden rounded-lg">
           {/* Slide items */}
           {slides.map((slide, index) => (
             <div
@@ -165,7 +59,7 @@ const Project = () => {
           ))}
         </div>
         {/* Slider indicators */}
-        <div className="absolute px-[100px] z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        <div className="absolute px-[5%] md:px-[10%] xl:px-[15%] z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
           {slides.map((_, index) => (
             <button
               key={index}
@@ -183,7 +77,7 @@ const Project = () => {
         {/* Slider controls */}
         <button
           type="button"
-          className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          className="absolute top-1/2 transform -translate-y-1/2 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
           data-carousel-prev
           onClick={prevSlide}
         >
@@ -207,7 +101,7 @@ const Project = () => {
         </button>
         <button
           type="button"
-          className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          className="absolute top-1/2 transform -translate-y-1/2 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
           data-carousel-next
           onClick={nextSlide}
         >

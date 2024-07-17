@@ -17,7 +17,7 @@ export default function Prices() {
         }}
         viewport={{ once: true }}
       >
-        <div className="py-4  px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+        <div className="py-4 -mt-1 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <h1
             id="price"
             className="flex items-center justify-center text-7xl font-bold py-10"
