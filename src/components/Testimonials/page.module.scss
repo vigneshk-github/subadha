@@ -47,3 +47,10 @@
         animation: scroll 5s linear infinite;
     } 
 }
+
+
+@media (max-width: 720px) {
+    .spacer {
+        font-size: 35px;
+    }
+}
