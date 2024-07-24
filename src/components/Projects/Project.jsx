@@ -4,11 +4,11 @@ const Project = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
-    "/images/p1.png",
-    "/images/p2.png",
-    "/images/p3.png",
-    "/images/p4.png",
-    "/images/p5.png",
+    { image: "/images/p1.png", link: "https://savegreenecobags.com" },
+    { image: "/images/p2.png", link: "https://esratechedu.com" },
+    { image: "/images/p3.png", link: "https://fmgreenindustry.com" },
+    { image: "/images/p4.png", link: "https://sricmrinfra.com" },
+    { image: "/images/p5.png", link: "https://gfemsolutions.com" },
   ];
 
   const nextSlide = () => {
@@ -39,8 +39,9 @@ const Project = () => {
         <div className="relative h-96 md:h-[50vh] lg:h-[60vh] xl:h-[70vh] w-full overflow-hidden rounded-lg">
           {/* Slide items */}
           {slides.map((slide, index) => (
-            <div
+            <a
               key={index}
+              href={slide.link}
               className={`absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 ${
                 index === currentSlide ? "" : "hidden"
               }`}
@@ -51,11 +52,11 @@ const Project = () => {
               data-carousel-item
             >
               <img
-                src={slide}
+                src={slide.image}
                 alt={`Slide ${index + 1}`}
                 className="object-cover h-full w-full"
               />
-            </div>
+            </a>
           ))}
         </div>
         {/* Slider indicators */}

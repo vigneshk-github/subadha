@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { ThemeContext } from "../ThemeProvider.js";
 import Scene from "../../../public/images/Scene";
 import { Canvas } from "@react-three/fiber";
-import { Environment, OrbitControls, ambientLight } from "@react-three/drei";
+import { Environment, OrbitControls} from "@react-three/drei";
 
 export default function Header() {
   const ctx = useContext(ThemeContext);
@@ -21,7 +21,7 @@ export default function Header() {
         (prevText) =>
           textOptions[(textOptions.indexOf(prevText) + 1) % textOptions.length]
       );
-    }, 2000); // Change text every 2 seconds
+    }, 2000); 
 
     return () => clearInterval(intervalId);
   }, []);
@@ -53,7 +53,7 @@ export default function Header() {
             <h1 className={`sm:px-4 mx-20 ${styles.intro}`}></h1>
             <h1 className="sm:pl-[57px] sm:text-[70px] sm:pb-5 text-5xl">
               <motion.span
-                key={currentText} // Reset animation on text change
+                key={currentText}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
@@ -71,7 +71,7 @@ export default function Header() {
                 <span className="relative z-10 block px-5 pt-3 py-3 sm:px-5 sm:py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
                   <span className="absolute inset-0 w-full h-full px-7 sm:px-5 sm:py-3 rounded-lg bg-gray-50"></span>
                   <span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>
-                  <span className="relative">Book a Free Call </span>
+                  <span className="relative">Book a Free Call</span>
                 </span>
                 <span
                   className="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0"
@@ -93,7 +93,9 @@ export default function Header() {
                 ></span>
               </a>
             </div>
-
+            <p className="ml-5 px-10 text-xl">
+                8/12 projects successfully delivered
+              </p>
             <script
               type="text/javascript"
               src="https://assets.calendly.com/assets/external/widget.js"
