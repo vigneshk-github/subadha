@@ -25,7 +25,7 @@ function Clientform() {
         () => {
           setLoading(false);
           setMessage("SUCCESS! Your message has been sent.");
-        },
+        },  
         (error) => {
           setLoading(false);
           setMessage(`FAILED... ${error.text}`);

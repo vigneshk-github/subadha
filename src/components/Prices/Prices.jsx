@@ -46,7 +46,7 @@ export default function Prices() {
                 </span>
               </div>
               <a
-                href="https://calendly.com/subadha-co-in/subadha"
+                href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ29kzqxxw-Hydb2sSIvA7OOfBHr_QLI7Nssa6k0JdMx6Za8dFuKKuLb68B60h94nzM4H-qPOB0U"
                 className=" ml-5 mb-4  relative inline-block text-sm group"
               >
                 <span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
@@ -129,11 +129,11 @@ export default function Prices() {
               </p>
               <div className="flex justify-center items-baseline my-8">
                 <span className="mr-2 text-2xl font-extrabold">
-                  ₹2,50,000 ($2,994)
+                  ₹2,60,000 ($3,097)
                 </span>
               </div>
               <a
-                href="https://calendly.com/subadha-co-in/subadha"
+                href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ29kzqxxw-Hydb2sSIvA7OOfBHr_QLI7Nssa6k0JdMx6Za8dFuKKuLb68B60h94nzM4H-qPOB0U"
                 className=" ml-5 mb-4  relative inline-block text-sm group"
               >
                 <span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
@@ -224,7 +224,7 @@ export default function Prices() {
                 </li>
               </ul>
               <a
-                href="https://calendly.com/subadha-co-in/subadha"
+                href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ29kzqxxw-Hydb2sSIvA7OOfBHr_QLI7Nssa6k0JdMx6Za8dFuKKuLb68B60h94nzM4H-qPOB0U"
                 className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900"
               ></a>
             </div>

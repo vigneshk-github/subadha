@@ -48,7 +48,7 @@ export default function Header() {
         <div className={styles.header}>
           <div className={styles.container}>
             <h1 className={`sm:px-4 sm:mr-[620px] mx-20 ${styles.intro}`}>
-              We Build Websites For Your
+              We provide services for Your
             </h1>
             <h1 className={`sm:px-4 mx-20 ${styles.intro}`}></h1>
             <h1 className="sm:pl-[57px] sm:text-[70px] sm:pb-5 text-5xl">
@@ -65,7 +65,7 @@ export default function Header() {
             </h1>
             <div className="but">
               <a
-                href="https://calendly.com/subadha-co-in/subadha"
+                href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ29kzqxxw-Hydb2sSIvA7OOfBHr_QLI7Nssa6k0JdMx6Za8dFuKKuLb68B60h94nzM4H-qPOB0U"
                 className="sm:ml-[58px] pt-10 sm:pt-0 -ml-8 relative inline-block text-sm group"
               >
                 <span className="relative z-10 block px-5 pt-3 py-3 sm:px-5 sm:py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
@@ -94,8 +94,8 @@ export default function Header() {
               </a>
             </div>
             <p className="ml-5 px-10 text-xl">
-                8/12 projects successfully delivered
-              </p>
+              8/12 projects successfully delivered
+            </p>
             <script
               type="text/javascript"
               src="https://assets.calendly.com/assets/external/widget.js"

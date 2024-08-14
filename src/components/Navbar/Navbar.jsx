@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className={styles.logoContainer}>
           <h3>
             <Image
-              src="/images/logo5.png"
+              src="/images/logo11.png"
               alt="Logo"
               className={styles.logo}
               width={40}
