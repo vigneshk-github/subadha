@@ -110,7 +110,7 @@
 
 
     .img1 {
-        max-width: 0%;
+        display: none;
     }
 
 }

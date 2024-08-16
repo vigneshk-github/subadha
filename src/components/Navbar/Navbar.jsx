@@ -31,7 +31,7 @@ const Navbar = () => {
               width={40}
               height={40}
             />
-            SUBADHA
+            SUBADHA AURA
           </h3>
         </div>
         <div
