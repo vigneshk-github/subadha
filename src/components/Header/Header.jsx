@@ -47,8 +47,8 @@ export default function Header() {
       >
         <div className={styles.header}>
           <div className={styles.container}>
-            <h1 className={`sm:px-4 sm:mr-[620px] mx-20 ${styles.intro}`}>
-              We provide services for Your
+            <h1 className={`sm:px-4  sm:text-left text-center sm:mr-[620px] sm:mx-10 ${styles.intro}`}>
+              We Provide Services For Your
             </h1>
             <h1 className={`sm:px-4 mx-20 ${styles.intro}`}></h1>
             <h1 className="sm:pl-[57px] sm:text-[70px] sm:pb-5 text-5xl">
@@ -93,7 +93,7 @@ export default function Header() {
                 ></span>
               </a>
             </div>
-            <p className="ml-5 px-10 text-xl">
+            <p className="sm:ml-5 px-10 pt-4 text-xl sm:text-left text-center">
               8/12 projects successfully delivered
             </p>
             <script

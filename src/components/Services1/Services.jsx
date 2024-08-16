@@ -5,12 +5,12 @@ export default function Services() {
   return (
     <main
       id="service"
-      className="font-body dark:text-white dark:bg-black text-black bg-white sm:pt-30 -mt-[10px] pt-[10px] sm:py-12 px-5 sm:px-6 sm:mt-[-80px]"
+      className="font-body  dark:text-white dark:bg-black text-black bg-white sm:pt-30 -mt-[10px] pt-[10px] sm:py-12 px-5 sm:px-6 sm:mt-[-80px]"
     >
       <h1 className="text-5xl text-center my-12 font-extrabold  sm:text-7xl tracking-tight">
         Services
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2  gap-1 mx-auto max-w-8xl">
+      <div className="grid grid-cols-1 md:grid-cols-2  gap-10 mx-auto max-w-8xl">
         <motion.div
           initial={{
             opacity: 0,
