@@ -11,6 +11,7 @@ import Team from "../components/Team/Team";
 import Clientform from "../components/ClientForm/Clientform";
 import Faq from "../components/FAQ/Faq";
 import ContactUs from "@/components/Contact/ContactUs";
+import Feature from "@/components/Features/Feature";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -44,6 +45,7 @@ export default function Home() {
       <Project />
       <Services />
       <Testimonial />
+      <Feature/>
       <Prices />
       <Timeline />
       <Team />

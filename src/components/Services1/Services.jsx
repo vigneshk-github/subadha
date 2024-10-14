@@ -28,7 +28,7 @@ export default function Services() {
           <div className="px-1 py-1 mx-auto max-w-screen-xl flex items-center justify-center  sm:px-6">
             <a
               href="#"
-              className="bg-black text-white mx-auto max-w-screen-md flex items-center justify-center flex-col w-full p-8 w-100 sm:p-16 border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 dark:bg-gray-800 dark:border-gray-700"
+              className="dark:bg-white dark:text-black mx-auto max-w-screen-md flex items-center justify-center flex-col w-full p-8 w-100 sm:p-16 border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 bg-black text-white dark:border-gray-700"
             >
               <h5 className="sm:mb-4 text-2xl pb-10 sm:text-4xl font-bold tracking-tight">
                 Website Design
@@ -48,15 +48,6 @@ export default function Services() {
                     ></path>
                   </svg>
                   <span>Personalized Designs</span>
-                  <div
-                    className="absolute left-1/2 top-1/2 w-[30vw] h-[25vh] -z-10 rounded-t-full"
-                    style={{
-                      backgroundImage:
-                        "linear-gradient(45deg, #4A249D, #009FBD, #F9E2AF)",
-                      filter: "blur(100px)",
-                      transform: "translate(-50%, -50%)", // Center the element
-                    }}
-                  ></div>
                 </li>
                 <li className="flex items-center space-x-3">
                   <svg
@@ -124,7 +115,7 @@ export default function Services() {
           <div className="px-1 py-1 mx-auto max-w-screen-xl flex items-center justify-center sm:px-6">
             <a
               href="#"
-              className="bg-black text-white mx-auto max-w-screen-md flex items-center justify-center flex-col w-full p-8 w-100 sm:p-16 border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 dark:bg-gray-800 dark:border-gray-700"
+              className="dark:bg-white dark:text-black mx-auto max-w-screen-md flex items-center justify-center flex-col w-full p-8 w-100 sm:p-16 border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 bg-black text-white dark:border-gray-700"
             >
               <h5 className="sm:mb-4 text-2xl pb-10 sm:text-4xl font-bold tracking-tight">
                 App Development
@@ -144,15 +135,6 @@ export default function Services() {
                     ></path>
                   </svg>
                   <span>Design to development</span>
-                  <div
-                    className="absolute left-1/2 top-1/2 w-[30vw] h-[25vh] -z-10 rounded-t-full"
-                    style={{
-                      backgroundImage:
-                        "linear-gradient(45deg, #4A249D, #009FBD, #F9E2AF)",
-                      filter: "blur(100px)",
-                      transform: "translate(-50%, -50%)", // Center the element
-                    }}
-                  ></div>
                 </li>
                 <li className="flex items-center space-x-3">
                   <svg
@@ -220,7 +202,7 @@ export default function Services() {
           <div className="px-1 py-1 mx-auto max-w-screen-xl flex items-center justify-center sm:px-6">
             <a
               href="#"
-              className="bg-black text-white mx-auto max-w-screen-md flex items-center justify-center flex-col w-full p-8 w-100 sm:p-16 border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 dark:bg-gray-800 dark:border-gray-700"
+              className="dark:bg-white dark:text-black mx-auto max-w-screen-md flex items-center justify-center flex-col w-full p-8 w-100 sm:p-16 border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 bg-black text-white dark:border-gray-700"
             >
               <h5 className="sm:mb-4 text-2xl pb-10 sm:text-4xl text-center font-bold tracking-tight">
                 Conversion Rate Optimization
@@ -240,15 +222,6 @@ export default function Services() {
                     ></path>
                   </svg>
                   <span>A/B testing and analysis</span>
-                  <div
-                    className="absolute left-1/2 top-1/2 w-[30vw] h-[25vh] -z-10 rounded-t-full"
-                    style={{
-                      backgroundImage:
-                        "linear-gradient(45deg, #4A249D, #009FBD, #F9E2AF)",
-                      filter: "blur(100px)",
-                      transform: "translate(-50%, -50%)", // Center the element
-                    }}
-                  ></div>
                 </li>
                 <li className="flex items-center space-x-3">
                   <svg
@@ -301,7 +274,7 @@ export default function Services() {
           <div className="px-1 py-1 mx-auto max-w-screen-xl flex items-center justify-center  sm:px-6">
             <a
               href="#"
-              className="bg-black text-white mx-auto max-w-screen-md flex items-center justify-center flex-col w-full p-8 w-100 sm:p-16 border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 dark:bg-gray-800 dark:border-gray-700"
+              className="dark:bg-white dark:text-black mx-auto max-w-screen-md flex items-center justify-center flex-col w-full p-8 w-100 sm:p-16 border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 bg-black text-white dark:border-gray-700"
             >
               <h5 className="text-center sm:mb-4 text-2xl pb-10 sm:text-4xl font-bold tracking-tight">
                 SEO and Content Marketing
@@ -321,15 +294,6 @@ export default function Services() {
                     ></path>
                   </svg>
                   <span>Keyword research and optimization</span>
-                  <div
-                    className="absolute left-1/2 top-1/2 w-[30vw] h-[25vh] -z-10 rounded-t-full"
-                    style={{
-                      backgroundImage:
-                        "linear-gradient(45deg, #4A249D, #009FBD, #F9E2AF)",
-                      filter: "blur(100px)",
-                      transform: "translate(-50%, -50%)", // Center the element
-                    }}
-                  ></div>
                 </li>
                 <li className="flex items-center space-x-3">
                   <svg
@@ -382,7 +346,7 @@ export default function Services() {
           <div className="px-1 py-1 mx-auto max-w-screen-xl flex items-center justify-center  sm:px-6">
             <a
               href="#"
-              className="bg-black text-white mx-auto max-w-screen-md flex items-center justify-center flex-col w-full p-8 w-100 sm:p-16 border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 dark:bg-gray-800 dark:border-gray-700"
+              className="dark:bg-white dark:text-black mx-auto max-w-screen-md flex items-center justify-center flex-col w-full p-8 w-100 sm:p-16 border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 bg-black text-white dark:border-gray-700"
             >
               <h5 className="sm:mb-4 text-2xl pb-10 sm:text-4xl font-bold tracking-tight">
                 Live Commerce Integration
@@ -402,15 +366,6 @@ export default function Services() {
                     ></path>
                   </svg>
                   <span>Live streaming setup and support</span>
-                  <div
-                    className="absolute left-1/2 top-1/2 w-[30vw] h-[25vh] -z-10 rounded-t-full"
-                    style={{
-                      backgroundImage:
-                        "linear-gradient(45deg, #4A249D, #009FBD, #F9E2AF)",
-                      filter: "blur(100px)",
-                      transform: "translate(-50%, -50%)", // Center the element
-                    }}
-                  ></div>
                 </li>
                 <li className="flex items-center space-x-3">
                   <svg
@@ -463,7 +418,7 @@ export default function Services() {
           <div className="px-1 py-1 mx-auto max-w-screen-xl flex items-center justify-center  sm:px-6">
             <a
               href="#"
-              className="bg-black text-white mx-auto max-w-screen-md flex items-center justify-center flex-col w-full p-8 w-100 sm:p-16 border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 dark:bg-gray-800 dark:border-gray-700"
+              className="bg-black text-white mx-auto max-w-screen-md flex items-center justify-center flex-col w-full p-8 w-100 sm:p-16 border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transform transition duration-300 hover:scale-105 dark:bg-white dark:text-black dark:border-gray-700"
             >
               <h5 className="sm:mb-4 text-2xl pb-10 sm:text-4xl font-bold tracking-tight">
                 Maintenance and Support
@@ -483,15 +438,6 @@ export default function Services() {
                     ></path>
                   </svg>
                   <span>Regular website updates and security checks</span>
-                  <div
-                    className="absolute left-1/2 top-1/2 w-[30vw] h-[25vh] -z-10 rounded-t-full"
-                    style={{
-                      backgroundImage:
-                        "linear-gradient(45deg, #4A249D, #009FBD, #F9E2AF)",
-                      filter: "blur(100px)",
-                      transform: "translate(-50%, -50%)", // Center the element
-                    }}
-                  ></div>
                 </li>
                 <li className="flex items-center space-x-3">
                   <svg

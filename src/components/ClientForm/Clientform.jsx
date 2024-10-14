@@ -49,7 +49,7 @@ function Clientform() {
         }}
         viewport={{ once: true }}
       >
-        <h2 className="text-5xl sm:text-7xl font-bold text-center mb-8">
+        <h2 className="text-5xl sm:text-6xl font-bold text-center mb-8">
           Client Request 
         </h2>
         <div className="max-w-lg md:max-w-4xl mx-auto">

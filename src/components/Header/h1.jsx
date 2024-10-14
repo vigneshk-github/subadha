@@ -1,4 +1,6 @@
 "use client";
+import Image from "next/image";
+import styles from "./style.module.css";
 import { Suspense, useContext, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ThemeContext } from "../ThemeProvider.js";
@@ -27,9 +29,8 @@ export default function Header() {
   return (
     <div
       id="home"
-      className="font-body text-black bg-white dark:text-green-50 dark:bg-black relative flex pb-10 overflow-hidden z-10"
+      className={`font-body text-black bg-white dark:text-green-50 dark:bg-black  ${styles.main}`}
     >
-      {/* Header Content */}
       <motion.div
         initial={{
           opacity: 0,
@@ -43,19 +44,16 @@ export default function Header() {
           },
         }}
         viewport={{ once: true }}
-        className="flex flex-col lg:flex-row items-center justify-between pt-[20vh] px-6 md:px-10 lg:px-20 xl:px-40 w-full"
       >
-        {/* Left Side: Text and Buttons */}
-        <div className="relative w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
-          {/* Light Effect */}
-          <div className="absolute ml-[650px] -mt-[70px] mb-[100px] -bottom-[100px] w-[500px] h-[100px] bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400   rounded-full opacity-80 blur-2xl"></div>
-
-          {/* Content */}
-          <div className="z-10">
-            <h1 className="text-5xl sm:text-5xl md:text-6xl lg:text-4xl xl:text-5xl 2xl:text-7xl font-bold mb-4 sm:mb-2">
+        <div className={styles.header}>
+          <div className={styles.container}>
+            <h1
+              className={`sm:px-4  sm:text-left text-center sm:mr-[620px] sm:mx-10 ${styles.intro}`}
+            >
               We Provide Services For Your
             </h1>
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold mb-6">
+            <h1 className={`sm:px-4 mx-20 ${styles.intro}`}></h1>
+            <h1 className="sm:pl-[57px] sm:text-[70px] sm:pb-5 text-5xl">
               <motion.span
                 key={currentText}
                 initial={{ opacity: 0 }}
@@ -67,15 +65,14 @@ export default function Header() {
                 {` ${currentText}`}
               </motion.span>
             </h1>
-            <div className="flex lg:justify-normal sm:justify-center sm:items-center flex-col sm:flex-row mt-6 space-y-4 sm:space-y-0 sm:space-x-4">
-              {/* Book a Free Call Button */}
+            <div className="but">
               <a
                 href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ29kzqxxw-Hydb2sSIvA7OOfBHr_QLI7Nssa6k0JdMx6Za8dFuKKuLb68B60h94nzM4H-qPOB0U"
-                className="relative inline-block text-sm group"
+                className="sm:ml-[58px] pt-10 sm:pt-0 -ml-8 relative inline-block text-sm group"
               >
-                <span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
-                  <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
-                  <span className="absolute left-0 w-[1000px] h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>
+                <span className="relative z-10 block px-5 pt-3 py-3 sm:px-5 sm:py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
+                  <span className="absolute inset-0 w-full h-full px-7 sm:px-5 sm:py-3 rounded-lg bg-gray-50"></span>
+                  <span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>
                   <span className="relative">Book a Free Call</span>
                 </span>
                 <span
@@ -83,14 +80,13 @@ export default function Header() {
                   data-rounded="rounded-lg"
                 ></span>
               </a>
-              {/* Projects Button */}
               <a
                 href="#projects"
-                className="relative inline-block text-sm group"
+                className=" ml-5 relative inline-block text-sm group"
               >
                 <span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
                   <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
-                  <span className="absolute left-0 w-[1000px] h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>
+                  <span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>
                   <span className="relative">Projects</span>
                 </span>
                 <span
@@ -99,29 +95,37 @@ export default function Header() {
                 ></span>
               </a>
             </div>
-            <p className="mt-4 text-xl">8/12 projects successfully delivered</p>
-            <p className="mt-4 text-lg sm:text-xl">
-              Explore our diverse portfolio of innovative web designs and
-              successful projects. Each piece reflects our commitment to
-              quality, creativity, and client satisfaction.
+            <p className="sm:ml-5 px-10 pt-4 text-xl sm:text-left text-center">
+              8/12 projects successfully delivered
             </p>
-          </div>
-        </div>
-
-        {/* Right Side: 3D Object */}
-        <div className="w-full h-full lg:w-1/2 mt-10 lg:mt-0 flex justify-center items-center ">
-          <div className="w-full h-full flex justify-center items-center transform sm:-translate-y-[100px] ">
-            <Canvas className="w-full h-full">
-              <ambientLight intensity={1.2} />
-              <OrbitControls enableZoom={false} />
-              <Suspense fallback={null}>
-                <Scene scale={[0.19, 0.19, 0.19]} />
-              </Suspense>
-              <Environment preset="sunset" />
-            </Canvas>
+            <script
+              type="text/javascript"
+              src="https://assets.calendly.com/assets/external/widget.js"
+              async
+            ></script>
+            <div className="flex flex-col md:flex-row mt-8 w-full">
+              <div className="flex-1 mb-4 md:mb-0 ">
+                <p className="flex px-10 mx-4 sm:text-left text-center -py-20  justify-center items-center pl-4 m-4 sm:px-50 sm:mr-50 text-[20px] sm:pl-15 sm:ml-[43px] sm:pr-[600px] sm:-mt-[10px] font-normal">
+                  Explore our diverse portfolio of innovative web designs and
+                  successful projects. Each piece reflects our commitment to
+                  quality, creativity, and client satisfaction.
+                </p>
+              </div>
+              <div className={styles.lightFx}></div>
+            </div>
           </div>
         </div>
       </motion.div>
+      <div className="img1 absolute ml-[900px] -mt-[70px] mb-[100px] top-26 w-[500px] h-[700px] ">
+        <Canvas className="mb-[100px]">
+          <ambientLight intensity={1.2} />
+          <OrbitControls enableZoom={false} />
+          <Suspense fallback={null}>
+            <Scene scale={[0.18, 0.18, 0.18]} />
+          </Suspense>
+          <Environment preset="sunset" />
+        </Canvas>
+      </div>
     </div>
   );
 }

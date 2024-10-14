@@ -20,12 +20,12 @@ export default function Prices() {
         <div className="py-4 -mt-1 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <h1
             id="price"
-            className="flex items-center justify-center text-7xl font-bold py-10"
+            className="flex items-center justify-center text-6xl font-bold py-10"
           >
             Prices
           </h1>
           <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold">
+            <h2 className="mb-4 text-3xl tracking-tight font-extrabold">
               Designed for business teams like yours
             </h2>
             <p className="mb-5 font-normal sm:text-xl">
