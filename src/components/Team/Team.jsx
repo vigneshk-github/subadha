@@ -80,7 +80,7 @@
               </a>
             </figure>
 
-            <figure className="relative w-48 h-48 md:w-64 md:h-64 transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 shadow-lg rounded-lg overflow-hidden">
+            {/* <figure className="relative w-48 h-48 md:w-64 md:h-64 transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 shadow-lg rounded-lg overflow-hidden">
               <a
                 target="_blank"
                 href="https://www.linkedin.com/in/nithin-kumar-elamshetty/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
@@ -102,7 +102,7 @@
                   <LinkedInIcon className="text-gray-300 inline-block h-5 w-5 mt-1"></LinkedInIcon>
                 </figcaption>
               </a>
-            </figure>
+            </figure> */}
 
             <figure className="relative w-48 h-48 md:w-64 md:h-64 transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 shadow-lg rounded-lg overflow-hidden">
               <a
